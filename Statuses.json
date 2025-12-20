@@ -24,10 +24,10 @@
   "incidents": [
     {
       "id": "1",
-      "title": "Store Performance Issues",
-      "description": "We're experiencing slow load times on the store. Our team is investigating.",
+      "title": "Script Issues",
+      "description": "Experiencing problems with the expiration date on Free Keys.",
       "status": "investigating",
-      "affectedServices": ["Store"],
+      "affectedServices": ["Script"],
       "createdAt": "2025-01-15T10:00:00Z",
       "updatedAt": "2025-01-15T10:30:00Z"
     }
