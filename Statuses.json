@@ -16,7 +16,7 @@
     {
       "name": "Website",
       "services": [
-        { "name": "Store", "status": "degraded", "description": "Slow response times" },
+        { "name": "Store", "status": "operational" },
         { "name": "Dashboard", "status": "operational" }
       ]
     }
