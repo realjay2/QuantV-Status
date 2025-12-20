@@ -18,7 +18,7 @@
       "name": "Website",
       "services": [
         { "name": "Store", "status": "operational" },
-        { "name": "Dashboard", "status": "operational" }
+        { "name": "Dashboard", "status": "maintenance", "description": "Updating Free Key Generation" }
       ]
     }
   ],
