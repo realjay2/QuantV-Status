@@ -10,7 +10,8 @@
     {
       "name": "Script",
       "services": [
-        { "name": "Loading", "status": "operational" }
+        { "name": "Freemium", "status": "degraded", "description": "Attempting to recall expiration dates" }
+        { "name": "Premium", "status": "operational" }
       ]
     },
     {
