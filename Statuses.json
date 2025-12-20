@@ -21,16 +21,6 @@
       ]
     }
   ],
-  "incidents": [
-    {
-      "id": "1",
-      "title": "Script Issues",
-      "description": "Experiencing problems with the expiration date on Free Keys.",
-      "status": "investigating",
-      "affectedServices": ["Script"],
-      "createdAt": "2025-01-15T10:00:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
-    }
-  ],
+  "incidents": [],
   "lastUpdated": "2025-01-15T10:30:00Z"
 }
