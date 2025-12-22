@@ -5,11 +5,11 @@
       "services": [
         {
           "name": "Commands",
-          "status": "operational"
+          "status": "down"
         },
         {
           "name": "Status",
-          "status": "operational"
+          "status": "down"
         }
       ]
     },
@@ -18,12 +18,12 @@
       "services": [
         {
           "name": "Freemium",
-          "status": "operational",
+          "status": "down",
           "description": ""
         },
         {
           "name": "Premium",
-          "status": "operational"
+          "status": "down"
         }
       ]
     },
@@ -32,11 +32,11 @@
       "services": [
         {
           "name": "Store",
-          "status": "operational"
+          "status": "down"
         },
         {
           "name": "Dashboard",
-          "status": "operational",
+          "status": "down",
           "description": ""
         }
       ]
@@ -45,8 +45,8 @@
   "incidents": [
     {
       "id": "1",
-      "title": "Free Key Generation",
-      "description": "Problems while attempting to login to the key website via discord.",
+      "title": "Keys Problem",
+      "description": "Problems while attempting to execute, use our bot, visit the website.",
       "status": "identified",
       "affectedServices": [
         "Website"
