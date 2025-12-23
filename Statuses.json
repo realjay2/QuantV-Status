@@ -38,10 +38,15 @@
           "name": "Dashboard",
           "status": "operational",
           "description": ""
+        },
+        {
+          "name": "Freemium",
+          "status": "down",
+          "description": ""
         }
       ]
     }
   ],
   "incidents": [],
-  "lastUpdated": "2025-12-22T20:56:36.987Z"
+  "lastUpdated": "2025-12-23T15:03:10.107Z"
 }
