@@ -5,7 +5,8 @@
       "services": [
         {
           "name": "Commands",
-          "status": "operational"
+          "status": "degraded",
+          "description": ""
         },
         {
           "name": "Status",
@@ -48,6 +49,18 @@
       ]
     }
   ],
-  "incidents": [],
-  "lastUpdated": "2025-12-31T11:23:54.450Z"
+  "incidents": [
+    {
+      "id": "59a64f0c-aacb-42ee-8635-a829f29a57fb",
+      "title": "Commands Update",
+      "description": "No description provided",
+      "status": "identified",
+      "affectedServices": [
+        "Bot"
+      ],
+      "createdAt": "2025-12-31T11:25:47.789Z",
+      "updatedAt": "2025-12-31T11:25:47.789Z"
+    }
+  ],
+  "lastUpdated": "2025-12-31T11:25:47.789Z"
 }
