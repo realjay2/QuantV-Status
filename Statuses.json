@@ -24,7 +24,7 @@
         },
         {
           "name": "Premium",
-          "status": "down",
+          "status": "operational",
           "description": ""
         }
       ]
@@ -73,5 +73,5 @@
       "updatedAt": "2025-12-31T11:26:15.649Z"
     }
   ],
-  "lastUpdated": "2025-12-31T11:27:00.995Z"
+  "lastUpdated": "2026-01-03T08:35:08.021Z"
 }
