@@ -1,0 +1,3371 @@
+-- Decompiled with Medal in Seliware
+
+return ({
+    ["Bq"] = function(_, p1, p2, p3)
+        p2[2][22][p3 + 3] = p1
+    end,
+    ["AU"] = table,
+    ["XU"] = function(p_u_4, _, p_u_5)
+        return function(...)
+            -- upvalues: (copy) p_u_5, (copy) p_u_4
+            local v6 = { p_u_5 }
+            local v7 = 19
+            while true do
+                while v7 < 86 do
+                    if v6[1][21] == v6[1][37] then
+                        while v6[1][38] do
+                            v6[1][1] = v6[1][21]
+                        end
+                    end
+                    v7 = 86
+                end
+                if v7 > 19 then
+                    if v6[1][7] ~= v6[1][39] then
+                        local v8 = p_u_4:RU(...)
+                        return p_u_4.H(v8)
+                    end
+                    return
+                end
+            end
+        end
+    end,
+    ["Mq"] = function(p9, p10, p11, p12, p13, p14)
+        if p13 < 117 then
+            p9:Sq(p10, p11, p14)
+            return p10, 59564, p13
+        end
+        local v15 = #p11[2][22]
+        p11[2][22][v15 + 1] = p12
+        return v15, 19483, 80
+    end,
+    ["iU"] = function(p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, _)
+        for v30 = 81, 111, 15 do
+            local v31
+            p29, v31, p25 = p16:uq(p27, p25, v30, p29, p18)
+            local _ = v31 == 49318
+        end
+        p18[8] = p17
+        local v32 = 90
+        local v33 = nil
+        local v34 = nil
+        while true do
+            while true do
+                while v32 > 53 do
+                    if v32 > 75 then
+                        if v32 == 90 then
+                            v32 = 113
+                            for v35 = 1, p28 do
+                                local v36, v37, v38, v39, v40, v41, v42, v43, v44
+                                v36, v37, v38, v39, v40, v41, p29, v42, v43, v44 = p16:xq(nil, p20, p22, nil, p25, nil, v35, nil, nil, nil, nil, p29, nil)
+                                if v40 ~= nil then
+                                    return v42, p29, { p16.H(v40) }, p25
+                                end
+                                p16:Gq(p17, p22, v43, v38, p27, p23, v41, p25, v35, p20, v42, p19, v37, v39, p18, v44, p24, p21, v36)
+                            end
+                        else
+                            p18[5] = p26
+                            v32 = 28
+                        end
+                    else
+                        p18[9] = p22[2][36]()
+                        v32 = 46
+                    end
+                end
+                if v32 > 28 then
+                    break
+                end
+                for _ = 1, p22[3]() do
+                    local v45 = nil
+                    local v46 = nil
+                    for v47 = 70, 224, 42 do
+                        if v47 <= 70 then
+                            v45 = p16:Dq(p22, v45)
+                        else
+                            if v47 > 112 then
+                                if v45 % 2 == 0 then
+                                    p26[p29] = v46 - v46 % 1
+                                else
+                                    p29 = p22[3]()
+                                    local v48 = p22[3]()
+                                    for v49 = v46 - v46 % 1, p29 do
+                                        p26[v49] = v48
+                                    end
+                                end
+                                break
+                            end
+                            v46 = v45 / 2
+                        end
+                    end
+                    p29 = p16:Yq(187, (p16:Yq(85, p29)))
+                end
+                v32 = 75
+            end
+            if v32 ~= 46 then
+                p18[4] = v33
+                for v50 = 1, v34 do
+                    local v51 = p16:eU(p22, p25, v33, v50, p28)
+                    if v51 ~= nil then
+                        return v32, p29, { p16.H(v51) }, p25
+                    end
+                end
+                return v32, p29, nil, p25
+            end
+            v34 = p22[2][36]()
+            v33 = p22[2][28](v34)
+            v32 = 53
+        end
+    end,
+    ["SU"] = math,
+    ["Kq"] = function(_, p52, _)
+        return p52[11172]
+    end,
+    ["MU"] = getmetatable,
+    ["M"] = function(p53, p54)
+        p54[14] = p53.a
+    end,
+    ["lq"] = function(_, p55, p56)
+        return p55[1][7] <= p56 and { p56 - p55[1][21] } or { p56 }
+    end,
+    ["Eq"] = function(_, p57, p58, p59, p60, p61)
+        if p59 < 125 then
+            local v62
+            if p58 > 127 then
+                v62 = p58 - 128 or p58
+            else
+                v62 = p58
+            end
+            return p57 + v62 * p60, 21617, p58, p59
+        else
+            if p59 > 56 then
+                p58 = p61[1][2](p61[1][18], p61[1][15], p61[1][15])
+                p59 = 56
+            end
+            return p57, nil, p58, p59
+        end
+    end,
+    ["N"] = function(p63)
+        local v_u_64 = p63[0]
+        local v_u_65 = p63[1]
+        return function()
+            -- upvalues: (copy) v_u_64, (copy) v_u_65
+            v_u_64:getmemoryUsageMbForTag(v_u_65.LuaHeap)
+        end
+    end,
+    ["jq"] = function(p66, _, p67, _, _, _, _, _, p68)
+        local v69 = 95
+        local v70 = nil
+        local v71 = nil
+        local v72 = nil
+        while true do
+            while v69 <= 52 or v69 >= 105 do
+                if v69 < 95 and v69 > 50 then
+                    return v71, p68[2][28](p67), v69, p68[2][28](p67), v72, v70
+                end
+                if v69 < 52 then
+                    v72 = p68[2][28](p67)
+                    v69 = 105
+                elseif v69 > 95 then
+                    v69, v71 = p66:dq(v71, p67, p68, v69)
+                end
+            end
+            v69, v70 = p66:Uq(p67, v70, p68, v69)
+        end
+    end,
+    ["n"] = function(p73, p74, p_u_75, p76, p77)
+        if p77 ~= 63 then
+            if p77 == 18 then
+                p77 = p73:y(p76, p77, p_u_75)
+            elseif p77 == 73 then
+                return p77, 34848, function(p78)
+                    -- upvalues: (copy) p_u_75
+                    local v79 = { p_u_75 }
+                    v79[1][18] = p78
+                    v79[1][15] = 1
+                end
+            end
+            return p77, nil, p74
+        end
+        p_u_75[18] = (function(p80)
+            -- upvalues: (copy) p_u_75
+            local v_u_81 = { p_u_75 }
+            local v82 = v_u_81[1][14](p80, "z", "!!!!!")
+            return v_u_81[1][14](v82, ".....", v_u_81[1][11]({}, {
+                ["__index"] = function(p83, p84)
+                    -- upvalues: (copy) v_u_81
+                    local v85, v86, v87, v88, v89 = v_u_81[1][2](p84, 1, 5)
+                    local v90 = v89 - 33 + (v88 - 33) * 85 + (v87 - 33) * 7225 + (v86 - 33) * 614125 + (v85 - 33) * 52200625
+                    local v91 = v_u_81[1][13](">I4", v90)
+                    p83[p84] = v91
+                    return v91
+                end
+            }))
+        end
+        p_u_75[19] = pcall
+        local v92
+        if p76[11655] then
+            v92 = p76[11655]
+        else
+            v92 = 18585 + (p73.FU(p73.xU((p73.xU(p73.m[7]))), p76[4692]) - p73.m[1])
+            p76[11655] = v92
+        end
+        return v92, 53381, p74
+    end,
+    ["Iq"] = function(_)
+        return {}
+    end,
+    ["tU"] = function(_)
+        return {}
+    end,
+    ["hU"] = function(p93, p94, p95, p96, p97)
+        if p95 then
+            p93:kU(p96, p94, p97)
+        else
+            p97[1][34][p96] = p94
+        end
+    end,
+    ["W"] = coroutine.yield,
+    ["E"] = function(p98)
+        local v_u_99 = p98[0]
+        local v_u_100 = p98[1]
+        return function()
+            -- upvalues: (copy) v_u_100, (copy) v_u_99
+            for _ = 1, v_u_100 - 1 do
+                local v_u_101 = v_u_99[3][v_u_99[2]]
+                v_u_99[3][v_u_99[2]] = function(...)
+                    -- upvalues: (copy) v_u_101
+                    return v_u_101(...)
+                end
+            end
+        end
+    end,
+    ["C"] = coroutine.wrap,
+    ["VU"] = string,
+    ["JU"] = function(_, p102, _, _)
+        if p102[2] ~= p102[1][1] then
+            p102[1][16] = {}
+        end
+        return 60, p102[1][36]() - 38112
+    end,
+    ["P"] = function(p103)
+        local v_u_104 = p103[1]
+        local v_u_105 = p103[0]
+        local v_u_106 = p103[2]
+        return function(p107)
+            -- upvalues: (copy) v_u_105, (copy) v_u_106, (copy) v_u_104
+            local v108 = 1
+            local v109 = ""
+            while v108 <= #p107 do
+                local v110 = v_u_105(p107, v108, v108)
+                v109 = v109 .. v_u_104((v_u_106(v_u_105(p107, v108 + 1, v108 + v110), 36)))
+                v108 = v108 + (v110 + 1)
+            end
+            return v109
+        end
+    end,
+    ["gq"] = function(_, _, p111)
+        p111[24] = nil
+        p111[25] = nil
+        p111[26] = nil
+        return 96
+    end,
+    ["Xq"] = function(p112, p113, p114, p115)
+        p113[34] = p112.s
+        if p115[5154] then
+            return p115[5154]
+        else
+            return p112:Rq(p114, p115)
+        end
+    end,
+    ["IU"] = bit32.bxor,
+    ["Dq"] = function(_, p116, _)
+        return p116[3]()
+    end,
+    ["OU"] = string.pack,
+    ["jU"] = function(p117, p118, _, p119, _, p120, _)
+        local v121 = p118()
+        local v122 = 48
+        local v123 = 107
+        local v124 = nil
+        while true do
+            local v125
+            v122, v125, v124 = p117:dU(p119, p120, v122, v123, v124)
+            if v125 == 42144 then
+                break
+            end
+            local _ = v125 == 48901
+        end
+        if v124 ~= 87 then
+            for v126 = 28, 306, 95 do
+                if v126 == 28 then
+                    p120[27][14] = p117.j
+                    p120[27][6] = p117.Z
+                else
+                    if v126 == 218 then
+                        p120[27][7] = p117.L.countlz
+                        break
+                    end
+                    if v126 == 123 then
+                        p120[27][8] = p117.L.band
+                    end
+                end
+            end
+            p120[27][10] = p117.b
+            p120[27][9] = p117.u
+        end
+        return v123, v122, v121
+    end,
+    ["tq"] = function(p127, p128, p129)
+        p129[9998] = 4294171558 + ((p129[32032] - p127.m[3] - p129[32032] > p127.m[7] and p129[22917] or p129[11070]) - p127.m[2])
+        p129[789] = -3489660823 + (p127.TU(p128 + p129[3386] + p129[3583], p129[29350]) - p129[3386])
+        local v130 = -4294569309 + p127.HU(p127.m[2] - p129[3583] + p129[4692] + p129[11655], p129[32032])
+        p129[28075] = v130
+        return v130
+    end,
+    ["TU"] = bit32.lshift,
+    ["oU"] = bit32.rrotate,
+    ["_U"] = bit32,
+    ["b"] = bit32.lshift,
+    ["fU"] = function(p131, _, p132)
+        local v133 = 121
+        local v134 = nil
+        while v133 == 121 do
+            v133 = 4
+            v134 = nil
+        end
+        local v135 = p132[1][29]()
+        if v135 > 64 then
+            v134 = p131:EU(v134, p132, v135)
+        else
+            local v136 = 118
+            while true do
+                local v137
+                v137, v136, v134 = p131:mU(v134, p132, v135, v136)
+                if v137 == 22346 then
+                    break
+                end
+                if v137 ~= nil then
+                    return { p131.H(v137) }, v134
+                end
+            end
+        end
+        return nil, v134
+    end,
+    ["D"] = bit32.countrz,
+    ["NU"] = function(_, _, p138)
+        return p138[1][29]() == 1
+    end,
+    ["l"] = string.char,
+    ["w"] = function(p139)
+        local v_u_140 = p139[4]
+        local v_u_141 = p139[3]
+        local v_u_142 = p139[1]
+        local v_u_143 = p139[2]
+        local v_u_144 = p139[0]
+        return function(p_u_145)
+            -- upvalues: (copy) v_u_143, (copy) v_u_141, (copy) v_u_142, (copy) v_u_140, (copy) v_u_144
+            return function(p146)
+                -- upvalues: (ref) v_u_143, (copy) p_u_145, (ref) v_u_141, (ref) v_u_142, (ref) v_u_140, (ref) v_u_144
+                local v147 = v_u_143()(p_u_145)
+                local v148 = v147.x
+                local v149 = v147.y
+                local v150 = v147.st
+                local v151 = {}
+                for v152 = 1, #p146 do
+                    v148 = (v148 + 1) % 256
+                    v149 = (v149 + v150[v148]) % 256
+                    local v153 = v150[v149]
+                    local v154 = v150[v148]
+                    v150[v148] = v153
+                    v150[v149] = v154
+                    v151[v152] = v_u_141(v_u_142(v_u_140(p146, v152), v150[(v150[v148] + v150[v149]) % 256]))
+                end
+                v147.x = v148
+                v147.y = v149
+                return v_u_144(v151)
+            end
+        end
+    end,
+    ["oq"] = function(_, p155, p156, p157)
+        p155[p156] = p156 - p157
+    end,
+    ["KU"] = function(p158, p159, p160, _, p161, _)
+        local v162 = 17
+        local v163 = nil
+        while true do
+            repeat
+                local v164
+                v162, v164, v163 = p158:wU(v162, v163, p161)
+            until v164 ~= 59193
+            if v164 == 38594 then
+                p161[1][34] = p161[1][28](v163)
+                return v163, nil, nil, p161[1][29]() ~= 0, 44
+            end
+            if v164 ~= nil then
+                return v163, { p158.H(v164) }, p159, p160, v162
+            end
+        end
+    end,
+    ["S"] = function(_, p165, _)
+        return p165[22947]
+    end,
+    ["qU"] = function(p166, p167, p168)
+        if not p168 then
+            return nil, 53
+        end
+        local v169 = p166:tU()
+        return { p166.H(v169) }, p167
+    end,
+    ["Vq"] = function(_, p170, p171, p172, p173)
+        p170[p171] = p172[2][34][p173]
+    end,
+    ["Nq"] = function(p174, p175, _, p176, p177)
+        local v178 = nil
+        local v179 = 125
+        repeat
+            local v180
+            p175, v180, v178, v179 = p174:Eq(p175, v178, v179, p176, p177)
+        until v180 == 21617
+        return p175, v178
+    end,
+    ["c"] = function(p181, p182, p183, p184)
+        p184[4] = p181.Q
+        p184[5] = unpack
+        p184[6] = p181.k.match
+        p184[7] = 4503599627370496
+        if p183[3583] then
+            return p183[3583]
+        end
+        local v185 = 63 + p181.YU(p181.FU(p181.IU(p182 - p181.m[6], p181.m[4], p181.m[6]), p182), p181.m[8])
+        p183[3583] = v185
+        return v185
+    end,
+    ["V"] = function(p186, p187, p188, _, p189)
+        p189[13] = nil
+        p189[14] = nil
+        local v190 = 37
+        while true do
+            local v191
+            v191, v190 = p186:A(v190, p189, p188)
+            if v191 == 23723 then
+                break
+            end
+            local _ = v191 == 10108
+        end
+        for v192 = 0, 255 do
+            p189[1][v192] = p187(v192)
+        end
+        p189[15] = nil
+        p189[16] = nil
+        return 103
+    end,
+    ["i"] = function(p193)
+        local v_u_194 = p193[0]
+        local v_u_195 = p193[1]
+        return function(...)
+            -- upvalues: (copy) v_u_194, (copy) v_u_195
+            local v196 = { ... }
+            local v197 = {}
+            for v198 = 1, #v196 do
+                v197[v198] = v_u_194[v196[v198]]
+            end
+            return v_u_195(v197)
+        end
+    end,
+    ["o"] = function(p199, p200, _, p201, p_u_202)
+        local v203 = 28
+        while true do
+            while v203 > 28 do
+                local v204
+                p200, v204, v203 = p199:v(p_u_202, v203, p200, p201)
+                if v204 == 55337 then
+                    p_u_202[9] = nil
+                    p_u_202[10] = nil
+                    p_u_202[11] = nil
+                    local v205 = 101
+                    while v205 >= 101 do
+                        p_u_202[9] = p199.R
+                        if p201[4692] then
+                            v205 = p201[4692]
+                        else
+                            v205 = -32 + (p199.xU((p199.IU(p201[22917] > p199.m[7] and p201[3583] or p201[17234]))) + p201[32032])
+                            p201[4692] = v205
+                        end
+                    end
+                    p_u_202[10] = function(p206, p207, p208)
+                        -- upvalues: (copy) p_u_202
+                        local v209 = { p_u_202 }
+                        if p207 < p208 then
+                            return
+                        else
+                            local v210 = p207 - p208 + 1
+                            if v210 >= 8 then
+                                return p206[p208], p206[p208 + 1], p206[p208 + 2], p206[p208 + 3], p206[p208 + 4], p206[p208 + 5], p206[p208 + 6], p206[p208 + 7], v209[1][10](p206, p207, p208 + 8)
+                            elseif v210 >= 7 then
+                                return p206[p208], p206[p208 + 1], p206[p208 + 2], p206[p208 + 3], p206[p208 + 4], p206[p208 + 5], p206[p208 + 6], v209[1][10](p206, p207, p208 + 7)
+                            elseif v210 >= 6 then
+                                return p206[p208], p206[p208 + 1], p206[p208 + 2], p206[p208 + 3], p206[p208 + 4], p206[p208 + 5], v209[1][10](p206, p207, p208 + 6)
+                            elseif v210 >= 5 then
+                                return p206[p208], p206[p208 + 1], p206[p208 + 2], p206[p208 + 3], p206[p208 + 4], v209[1][10](p206, p207, p208 + 5)
+                            elseif v210 >= 4 then
+                                return p206[p208], p206[p208 + 1], p206[p208 + 2], p206[p208 + 3], v209[1][10](p206, p207, p208 + 4)
+                            elseif v210 >= 3 then
+                                return p206[p208], p206[p208 + 1], p206[p208 + 2], v209[1][10](p206, p207, p208 + 3)
+                            elseif v210 >= 2 then
+                                return p206[p208], p206[p208 + 1], v209[1][10](p206, p207, p208 + 2)
+                            else
+                                return p206[p208], v209[1][10](p206, p207, p208 + 1)
+                            end
+                        end
+                    end
+                    p_u_202[11] = p199.X
+                    p_u_202[12] = function(p211, p212, p213)
+                        -- upvalues: (copy) p_u_202
+                        local v214 = { p_u_202 }
+                        local v215 = p212 or 1
+                        local v216 = p213 or #p211
+                        if v216 - v215 + 1 > 7997 then
+                            return v214[1][10](p211, v216, v215)
+                        else
+                            return v214[1][5](p211, v215, v216)
+                        end
+                    end
+                    return v205, p200
+                end
+                local _ = v204 == 32626
+            end
+            v203 = p199:c(v203, p201, p_u_202)
+        end
+    end,
+    ["aU"] = function(p_u_217, _, p218, _, _, _, p_u_219)
+        p_u_219[40] = nil
+        p_u_219[41] = nil
+        local v220 = 107
+        local v221 = nil
+        local v222 = nil
+        local v223 = nil
+        while true do
+            while v220 ~= 107 do
+                if v220 == 78 then
+                    p_u_219[41] = function()
+                        -- upvalues: (copy) p_u_219, (copy) p_u_217
+                        local v224 = { p_u_219[12], p_u_219, p_u_219[31] }
+                        local v225, v226 = p_u_217:Wq(v224, nil, nil)
+                        local v227, v228, v229, v230, v231, v232 = p_u_217:jq(nil, v225, nil, nil, nil, nil, nil, v224)
+                        local v233, v234, v235, v236, v237, v238 = p_u_217:bq(nil, v232, nil, nil, v230, v227, v228, nil, v224, nil, v226, v225, v229)
+                        local _, _, v239, _ = p_u_217:iU(v235, v226, v230, v227, v228, v224, v232, v234, v236, v237, v231, v225, v238, v233)
+                        if v239 ~= nil then
+                            return p_u_217.H(v239)
+                        end
+                        local v240 = p_u_217:zU(v226)
+                        return p_u_217.H(v240)
+                    end
+                    if p218[24471] then
+                        v220 = p218[24471]
+                    else
+                        v220 = p_u_217:pU(v220, p218)
+                    end
+                elseif v220 == 85 then
+                    v223 = function()
+                        -- upvalues: (copy) p_u_219, (copy) p_u_217
+                        local v241 = { p_u_219, p_u_219[31], p_u_219[33] }
+                        local v242, v243, v244, v245, v246 = p_u_217:KU(nil, nil, nil, v241, nil)
+                        if v243 ~= nil then
+                            return p_u_217.H(v243)
+                        end
+                        local _, v247, _ = p_u_217:CU(v246, v242, v244, v241, v245)
+                        return p_u_217.H(v247)
+                    end
+                    if p218[30730] then
+                        v220 = p218[30730]
+                    else
+                        v220 = -2774135234 + (p_u_217.IU(p_u_217.IU(p218[17757], p_u_217.m[4], p218[200]), p_u_217.m[8]) + p218[22917] + p_u_217.m[4])
+                        p218[30730] = v220
+                    end
+                elseif v220 == 48 then
+                    v222 = function(...)
+                        return (...)()
+                    end
+                    if p218[2017] then
+                        v220 = p218[2017]
+                    else
+                        v220 = -3923668300 + (p218[17757] + p218[29350] + p218[27085] + p_u_217.m[7] - p218[15484])
+                        p218[2017] = v220
+                    end
+                elseif v220 == 79 then
+                    return v222, v220, v223, p_u_217:XU(v221, p_u_219)
+                end
+            end
+            p_u_219[39] = function(...)
+                -- upvalues: (copy) p_u_219
+                local v248 = { p_u_219[3], p_u_219 }
+                local v249 = v248[1]("#", ...)
+                if v249 == 0 then
+                    return v249, v248[2][30]
+                else
+                    return v249, { ... }
+                end
+            end
+            p_u_219[40] = function(p_u_250, p_u_251, _)
+                -- upvalues: (copy) p_u_219, (copy) p_u_217
+                local v_u_252 = {
+                    p_u_219,
+                    p_u_219[12],
+                    p_u_219[17],
+                    p_u_219[32]
+                }
+                local v_u_253 = p_u_250[7]
+                local v_u_254 = p_u_250[5]
+                local v_u_255 = p_u_250[1]
+                local v_u_256 = p_u_250[2]
+                local v_u_257 = p_u_250[8]
+                local v_u_258 = p_u_250[6]
+                local v_u_259 = p_u_250[10]
+                local v_u_260 = p_u_250[11]
+                local v_u_261 = p_u_250[3]
+                return function(...)
+                    -- upvalues: (copy) v_u_252, (copy) v_u_253, (copy) v_u_257, (copy) v_u_258, (copy) v_u_260, (copy) v_u_256, (ref) p_u_217, (copy) v_u_259, (copy) v_u_261, (copy) v_u_255, (copy) p_u_251, (copy) p_u_250, (copy) v_u_254
+                    local v_u_262 = 1
+                    local v_u_263 = v_u_252[1][28](v_u_253)
+                    local v_u_264, v_u_265 = v_u_252[1][39](...)
+                    local v_u_266 = 1
+                    local v_u_267 = 1
+                    local v_u_268 = 0
+                    local v_u_269 = nil
+                    local v_u_270 = nil
+                    local v_u_271 = nil
+                    local v_u_272 = nil
+                    local v_u_273 = nil
+                    local v484, v485, v486, v487 = v_u_252[1][19](function()
+                        -- upvalues: (ref) v_u_257, (ref) v_u_267, (ref) v_u_269, (ref) v_u_272, (ref) v_u_273, (ref) v_u_270, (ref) v_u_258, (copy) v_u_263, (ref) v_u_260, (ref) v_u_256, (ref) v_u_252, (ref) v_u_262, (ref) p_u_217, (ref) v_u_259, (ref) v_u_261, (ref) v_u_255, (ref) v_u_271, (ref) p_u_251, (copy) v_u_265, (ref) p_u_250, (copy) v_u_264, (ref) v_u_268, (ref) v_u_266
+                        while true do
+                            local v274 = v_u_257[v_u_267]
+                            if v274 < 76 then
+                                if v274 >= 38 then
+                                    if v274 >= 57 then
+                                        if v274 < 66 then
+                                            if v274 < 61 then
+                                                if v274 >= 59 then
+                                                    if v274 == 60 then
+                                                        v_u_263[v_u_256[v_u_267]] = getfenv
+                                                    else
+                                                        v_u_263[v_u_260[v_u_267]] = v_u_259[v_u_267] ~= v_u_261[v_u_267]
+                                                    end
+                                                elseif v274 == 58 then
+                                                    v_u_263[v_u_260[v_u_267]] = _G
+                                                else
+                                                    v_u_267 = v_u_260[v_u_267]
+                                                end
+                                            elseif v274 < 63 then
+                                                if v274 == 62 then
+                                                    v_u_263[v_u_256[v_u_267]] = v_u_259[v_u_267] == v_u_255[v_u_267]
+                                                else
+                                                    v_u_263[v_u_256[v_u_267]] = v_u_252[1][27][v_u_258[v_u_267]]
+                                                end
+                                            elseif v274 < 64 then
+                                                v_u_263[v_u_260[v_u_267]] = v_u_263[v_u_258[v_u_267]] ~= v_u_263[v_u_256[v_u_267]]
+                                            elseif v274 == 65 then
+                                                v_u_263[v_u_258[v_u_267]] = v_u_256
+                                            elseif v_u_261[v_u_267] >= v_u_263[v_u_260[v_u_267]] then
+                                                v_u_267 = v_u_258[v_u_267]
+                                            end
+                                        elseif v274 >= 71 then
+                                            if v274 >= 73 then
+                                                if v274 >= 74 then
+                                                    if v274 == 75 then
+                                                        v_u_263[v_u_260[v_u_267]] = {}
+                                                    else
+                                                        v_u_263[v_u_258[v_u_267]] = v_u_263[v_u_256[v_u_267]] * v_u_263[v_u_260[v_u_267]]
+                                                    end
+                                                else
+                                                    v_u_263[v_u_260[v_u_267]] = xpcall
+                                                end
+                                            elseif v274 == 72 then
+                                                v_u_263[v_u_256[v_u_267]] = workspace
+                                            else
+                                                v_u_263[v_u_256[v_u_267]] = v_u_259[v_u_267] > v_u_255[v_u_267]
+                                            end
+                                        elseif v274 < 68 then
+                                            if v274 == 67 then
+                                                v_u_263[v_u_258[v_u_267]] = unpack
+                                            else
+                                                v_u_263[v_u_256[v_u_267]][v_u_255[v_u_267]] = v_u_259[v_u_267]
+                                            end
+                                        else
+                                            if v274 < 69 then
+                                                if v_u_271 then
+                                                    for v275, v276 in v_u_271 do
+                                                        if v275 >= 1 then
+                                                            v276[3] = v276
+                                                            v276[1] = v_u_263[v275]
+                                                            v276[2] = 1
+                                                            v_u_271[v275] = nil
+                                                        end
+                                                    end
+                                                end
+                                                local v277 = v_u_256[v_u_267]
+                                                v_u_262 = v277 + 1
+                                                return true, v277, 2
+                                            end
+                                            if v274 == 70 then
+                                                local v278 = v_u_258[v_u_267]
+                                                local v279 = v_u_260[v_u_267]
+                                                local v280 = v_u_256[v_u_267]
+                                                if v279 ~= 0 then
+                                                    v_u_262 = v278 + v279 - 1
+                                                end
+                                                local v281, v282
+                                                if v279 == 1 then
+                                                    v281, v282 = v_u_252[1][39](v_u_263[v278]())
+                                                else
+                                                    v281, v282 = v_u_252[1][39](v_u_263[v278](v_u_252[2](v_u_263, v278 + 1, v_u_262)))
+                                                end
+                                                if v280 == 1 then
+                                                    v_u_262 = v278 - 1
+                                                else
+                                                    local v283
+                                                    if v280 == 0 then
+                                                        v283 = v281 + v278 - 1
+                                                        v_u_262 = v283
+                                                    else
+                                                        v283 = v278 + v280 - 2
+                                                        v_u_262 = v283 + 1
+                                                    end
+                                                    local v284 = 0
+                                                    for v285 = v278, v283 do
+                                                        v284 = v284 + 1
+                                                        v_u_263[v285] = v282[v284]
+                                                    end
+                                                end
+                                            else
+                                                v_u_263[v_u_258[v_u_267]] = v_u_265[v_u_266]
+                                            end
+                                        end
+                                    elseif v274 < 47 then
+                                        if v274 >= 42 then
+                                            if v274 < 44 then
+                                                if v274 == 43 then
+                                                    v_u_263[v_u_256[v_u_267]] = v_u_263[v_u_258[v_u_267]] > v_u_263[v_u_260[v_u_267]]
+                                                else
+                                                    local v286 = v_u_261[v_u_267]
+                                                    local v287 = v286[4]
+                                                    local v288 = #v287
+                                                    local v289 = v288 > 0 and {} or false
+                                                    local v290 = v_u_252[1][40](v286, v289)
+                                                    v_u_263[v_u_260[v_u_267]] = v290
+                                                    if v289 then
+                                                        for v291 = 1, v288 do
+                                                            local v292 = v287[v291]
+                                                            local v293 = v292[3]
+                                                            local v294 = v292[2]
+                                                            if v293 == 0 then
+                                                                if not v_u_271 then
+                                                                    v_u_271 = {}
+                                                                end
+                                                                local v295 = v_u_271[v294]
+                                                                if not v295 then
+                                                                    v295 = {
+                                                                        [3] = v_u_263,
+                                                                        [2] = v294
+                                                                    }
+                                                                    v_u_271[v294] = v295
+                                                                end
+                                                                v289[v291 - 1] = v295
+                                                            elseif v293 == 1 then
+                                                                v289[v291 - 1] = v_u_263[v294]
+                                                            else
+                                                                v289[v291 - 1] = p_u_251[v294]
+                                                            end
+                                                        end
+                                                    end
+                                                end
+                                            elseif v274 >= 45 then
+                                                if v274 == 46 then
+                                                    v_u_263[v_u_256[v_u_267]] = v_u_255[v_u_267] % v_u_259[v_u_267]
+                                                else
+                                                    local v296 = p_u_251[v_u_258[v_u_267]]
+                                                    v_u_263[v_u_260[v_u_267]] = v296[3][v296[2]]
+                                                end
+                                            else
+                                                v_u_263[v_u_258[v_u_267]] = v_u_252[1][28](v_u_256[v_u_267])
+                                            end
+                                        elseif v274 >= 40 then
+                                            if v274 == 41 then
+                                                local v297 = v_u_256[v_u_267]
+                                                v_u_262 = v297 + v_u_258[v_u_267] - 1
+                                                v_u_263[v297](v_u_252[2](v_u_263, v297 + 1, v_u_262))
+                                                v_u_262 = v297 - 1
+                                            elseif v_u_255[v_u_267] > v_u_263[v_u_256[v_u_267]] then
+                                                v_u_267 = v_u_258[v_u_267]
+                                            end
+                                        elseif v274 == 39 then
+                                            v_u_263[v_u_258[v_u_267]] = v_u_261[v_u_267]
+                                        else
+                                            v_u_263[v_u_256[v_u_267]] = nil
+                                        end
+                                    elseif v274 >= 52 then
+                                        if v274 < 54 then
+                                            if v274 == 53 then
+                                                v_u_263[v_u_258[v_u_267]] = not v_u_263[v_u_256[v_u_267]]
+                                            else
+                                                local v298 = p_u_251[v_u_260[v_u_267]]
+                                                v298[3][v298[2]] = v_u_263[v_u_256[v_u_267]]
+                                            end
+                                        elseif v274 >= 55 then
+                                            if v274 == 56 then
+                                                local v299 = v_u_264 - v_u_268 - 1
+                                                local v300 = v_u_260[v_u_267]
+                                                local v301 = v299 < 0 and -1 or v299
+                                                local v302 = 0
+                                                for v303 = v300, v300 + v301 do
+                                                    v_u_263[v303] = v_u_265[v_u_266 + v302]
+                                                    v302 = v302 + 1
+                                                end
+                                                v_u_262 = v300 + v301
+                                            else
+                                                v_u_263[v_u_260[v_u_267]] = v_u_263[v_u_258[v_u_267]] + v_u_263[v_u_256[v_u_267]]
+                                            end
+                                        else
+                                            local v304 = v_u_258[v_u_267]
+                                            local v305 = v_u_256[v_u_267]
+                                            local v306 = v_u_263[v304]
+                                            v_u_252[1][20](v_u_263, v304 + 1, v304 + v_u_260[v_u_267], v305 + 1, v306)
+                                        end
+                                    elseif v274 >= 49 then
+                                        if v274 < 50 then
+                                            if v_u_271 then
+                                                for v307, v308 in v_u_271 do
+                                                    if v307 >= 1 then
+                                                        v308[3] = v308
+                                                        v308[1] = v_u_263[v307]
+                                                        v308[2] = 1
+                                                        v_u_271[v307] = nil
+                                                    end
+                                                end
+                                            end
+                                        end
+                                        if v274 == 51 then
+                                            v_u_263[v_u_260[v_u_267]] = p_u_251[v_u_258[v_u_267]][v_u_261[v_u_267]]
+                                        else
+                                            local v309 = v_u_258[v_u_267]
+                                            local v310, v311, v312 = v_u_273()
+                                            if v310 then
+                                                v_u_263[v309 + 1] = v311
+                                                v_u_263[v309 + 2] = v312
+                                                v_u_267 = v_u_260[v_u_267]
+                                            end
+                                        end
+                                    elseif v274 == 48 then
+                                        v_u_263[v_u_258[v_u_267]] = v_u_263[v_u_260[v_u_267]] - v_u_263[v_u_256[v_u_267]]
+                                    else
+                                        v_u_263[v_u_260[v_u_267]] = require
+                                    end
+                                else
+                                    if v274 < 19 then
+                                        if v274 >= 9 then
+                                            if v274 < 14 then
+                                                if v274 >= 11 then
+                                                    if v274 < 12 then
+                                                        v_u_263[v_u_258[v_u_267]] = #v_u_263[v_u_256[v_u_267]]
+                                                    elseif v274 == 13 then
+                                                        v_u_263[v_u_258[v_u_267]] = Enum
+                                                    else
+                                                        v_u_263[v_u_256[v_u_267]] = debug
+                                                    end
+                                                elseif v274 == 10 then
+                                                    v_u_263[v_u_260[v_u_267]] = type
+                                                else
+                                                    v_u_263[v_u_260[v_u_267]] = Instance
+                                                end
+                                            elseif v274 >= 16 then
+                                                if v274 >= 17 then
+                                                    if v274 == 18 then
+                                                        local v313 = p_u_251[v_u_256[v_u_267]]
+                                                        v313[3][v313[2]][v_u_263[v_u_258[v_u_267]]] = v_u_263[v_u_260[v_u_267]]
+                                                    else
+                                                        v_u_263[v_u_260[v_u_267]] = v_u_263[v_u_258[v_u_267]] <= v_u_263[v_u_256[v_u_267]]
+                                                    end
+                                                else
+                                                    v_u_263[v_u_256[v_u_267]] = coroutine
+                                                end
+                                            elseif v274 == 15 then
+                                                for v314 = v_u_256[v_u_267], v_u_260[v_u_267] do
+                                                    v_u_263[v314] = nil
+                                                end
+                                            else
+                                                v_u_263[v_u_258[v_u_267]] = v_u_255[v_u_267] + v_u_261[v_u_267]
+                                            end
+                                            goto l17
+                                        end
+                                        if v274 >= 4 then
+                                            if v274 < 6 then
+                                                if v274 == 5 then
+                                                    script = v_u_263[v_u_256[v_u_267]]
+                                                elseif v_u_263[v_u_258[v_u_267]] ~= v_u_255[v_u_267] then
+                                                    v_u_267 = v_u_256[v_u_267]
+                                                end
+                                            elseif v274 >= 7 then
+                                                if v274 == 8 then
+                                                    v_u_252[1][27][v_u_258[v_u_267]] = v_u_263[v_u_260[v_u_267]]
+                                                else
+                                                    v_u_263[v_u_256[v_u_267]] = v_u_263[v_u_258[v_u_267]] < v_u_263[v_u_260[v_u_267]]
+                                                end
+                                            else
+                                                v_u_263[v_u_260[v_u_267]] = assert
+                                            end
+                                            goto l17
+                                        end
+                                        if v274 < 2 then
+                                            if v274 == 1 then
+                                                if v_u_263[v_u_258[v_u_267]] ~= v_u_263[v_u_260[v_u_267]] then
+                                                    v_u_267 = v_u_256[v_u_267]
+                                                end
+                                            else
+                                                v_u_263[v_u_256[v_u_267]] = tostring
+                                            end
+                                            goto l17
+                                        end
+                                        if v274 ~= 3 then
+                                            local v315 = 115
+                                            local v316 = nil
+                                            local v317 = nil
+                                            local v318 = nil
+                                            while true do
+                                                if v315 == 115 then
+                                                    v317 = -4294967150
+                                                    v318 = 0
+                                                    local v319 = -63
+                                                    local _ = v274 <= v315 + v274 and v274
+                                                    if v274 == v315 or not v315 then
+                                                        v315 = v274
+                                                    end
+                                                    v315 = v319 + (v315 + v274)
+                                                    continue
+                                                end
+                                                if v315 == 54 then
+                                                    local v320 = 106
+                                                    local v321 = 4503599627370495
+                                                    while true do
+                                                        if v320 == 106 then
+                                                            v318 = v318 * v321
+                                                            v321 = v_u_252[1][27]
+                                                            v320 = -41 + (v_u_252[1][27][9](v320 + v320, v274, v274) - v320 - v274)
+                                                            continue
+                                                        end
+                                                        if v320 == 65 then
+                                                            local v322 = 6
+                                                            local v323 = v321[v322]
+                                                            local v324 = 101
+                                                            local v325 = nil
+                                                            while true do
+                                                                while true do
+                                                                    while v324 > 52 do
+                                                                        if v324 > 95 then
+                                                                            if v324 == 105 then
+                                                                                local _ = v324 - v324 == v324 and v274
+                                                                                v324 = 46 + (v274 + v274 + v274)
+                                                                                v316 = 8
+                                                                            else
+                                                                                v322 = v_u_252[1][27]
+                                                                                v324 = v_u_252[1][27][7]((v_u_252[1][27][6](v_u_252[1][27][10](v274, v274) + v274)))
+                                                                            end
+                                                                        else
+                                                                            v322 = v322[v325]
+                                                                            v324 = 48 + ((v_u_252[1][27][7]((v_u_252[1][27][7](v324))) < v274 and v324 and v324 or v274) == v274 and v274 and v274 or v324)
+                                                                        end
+                                                                    end
+                                                                    if v324 > 0 then
+                                                                        break
+                                                                    end
+                                                                    local _ = v_u_252[1][27][12]((v_u_252[1][27][8](v324 + v324, v274, v274))) == v324 or not v324
+                                                                    local v326 = 95
+                                                                    v325 = 7
+                                                                    v324 = v326 + v324
+                                                                end
+                                                                if v324 == 52 then
+                                                                    break
+                                                                end
+                                                                v325 = v_u_252[1][27]
+                                                                v324 = -2147483561 + v_u_252[1][27][11](v_u_252[1][27][7](v324) - v274 + v324, v274)
+                                                            end
+                                                            local v327 = v325[v316]
+                                                            local v328 = 23
+                                                            while true do
+                                                                if v328 == 23 then
+                                                                    v316 = v_u_252[1][27]
+                                                                    v328 = -4294967264 + (v_u_252[1][27][6](v274) - v328 + v274 + v274)
+                                                                    continue
+                                                                end
+                                                                if v328 == 10 then
+                                                                    local v329 = 8
+                                                                    local v330 = v316[v329]
+                                                                    local v331 = 3
+                                                                    while v331 ~= 6 do
+                                                                        local v332 = v_u_252[1][27][9]
+                                                                        local _ = v_u_252[1][27][13](v274, v331) + v331 <= v331 and v274
+                                                                        v331 = 4 + v332(v274)
+                                                                        v329 = v274
+                                                                    end
+                                                                    local v333 = v330(v329 + v_u_257[v_u_267])
+                                                                    local v334 = v274
+                                                                    local v335 = 90
+                                                                    while true do
+                                                                        if v335 == 90 then
+                                                                            v333 = v333 + v334
+                                                                            v335 = 111 + (v_u_252[1][27][8](v_u_252[1][27][9](v274) - v335, v274, v335) + v274)
+                                                                            continue
+                                                                        end
+                                                                        if v335 == 113 then
+                                                                            local v336 = v327(v333, v_u_257[v_u_267]) ~= v274
+                                                                            if v336 then
+                                                                                v336 = v_u_257[v_u_267]
+                                                                            end
+                                                                            local v337 = 84
+                                                                            while true do
+                                                                                if v337 == 84 then
+                                                                                    v337 = 25 + (v_u_252[1][27][9]((v_u_252[1][27][10](v_u_252[1][27][12](v337), v274))) + v274)
+                                                                                    v336 = v336 or v274
+                                                                                    continue
+                                                                                end
+                                                                                if v337 == 35 then
+                                                                                    local v338 = v322(v336)
+                                                                                    local v339 = v_u_257[v_u_267]
+                                                                                    local v340 = 32
+                                                                                    while true do
+                                                                                        if v340 < 82 then
+                                                                                            v338 = v338 + v339
+                                                                                            v323 = v323(v338)
+                                                                                            v340 = -4294967241 + (v_u_252[1][27][13](v340 - v274 - v340, v274) + v340)
+                                                                                            continue
+                                                                                        end
+                                                                                        if v340 > 32 then
+                                                                                            local v341 = v318 + v323
+                                                                                            local v342 = 64
+                                                                                            while true do
+                                                                                                if v342 == 64 then
+                                                                                                    v317 = v317 + v341
+                                                                                                    v342 = 91 + (v_u_252[1][27][9]((v_u_252[1][27][12]((v_u_252[1][27][11](v342, v274))))) - v342)
+                                                                                                    continue
+                                                                                                end
+                                                                                                if v342 == 31 then
+                                                                                                    v_u_257[v_u_267] = v317
+                                                                                                    local v343 = v_u_263
+                                                                                                    local v344 = 75
+                                                                                                    while v344 > 46 do
+                                                                                                        v341 = v_u_260[v_u_267]
+                                                                                                        v344 = 46 + (v_u_252[1][27][8](v274 - v274, v274, v274) - v274 + v274)
+                                                                                                    end
+                                                                                                    local v345 = v_u_263
+                                                                                                    local v346 = v_u_256[v_u_267]
+                                                                                                    local v347 = v345[v346]
+                                                                                                    local v348 = 58
+                                                                                                    while true do
+                                                                                                        while true do
+                                                                                                            if v348 == 58 then
+                                                                                                                v346 = v_u_259[v_u_267]
+                                                                                                                local _ = v348 <= v274 and v348
+                                                                                                                v348 = -35 + (v348 + v348 + v274 - v274)
+                                                                                                            else
+                                                                                                                if v348 ~= 81 then
+                                                                                                                    goto l835
+                                                                                                                end
+                                                                                                                v347 = v347 * v346
+                                                                                                                v348 = 99 + v_u_252[1][27][7](v_u_252[1][27][14](v274 + v274, v274) + v348)
+                                                                                                            end
+                                                                                                        end
+                                                                                                        ::l835::
+                                                                                                        if v348 == 124 then
+                                                                                                            v343[v341] = v347
+                                                                                                            goto l17
+                                                                                                        end
+                                                                                                    end
+                                                                                                end
+                                                                                            end
+                                                                                        end
+                                                                                    end
+                                                                                end
+                                                                            end
+                                                                        end
+                                                                    end
+                                                                end
+                                                            end
+                                                        end
+                                                    end
+                                                end
+                                            end
+                                        end
+                                        v_u_263[v_u_260[v_u_267]] = v_u_263[v_u_256[v_u_267]] + v_u_259[v_u_267]
+                                        goto l17
+                                    end
+                                    if v274 < 28 then
+                                        if v274 >= 23 then
+                                            if v274 < 25 then
+                                                if v274 == 24 then
+                                                    if v_u_271 then
+                                                        for v349, v350 in v_u_271 do
+                                                            if v349 >= 1 then
+                                                                v350[3] = v350
+                                                                v350[1] = v_u_263[v349]
+                                                                v350[2] = 1
+                                                                v_u_271[v349] = nil
+                                                            end
+                                                        end
+                                                    end
+                                                    local v351 = v_u_258[v_u_267]
+                                                    return false, v351, v351 + v_u_260[v_u_267] - 2
+                                                end
+                                                local v352 = p_u_251[v_u_260[v_u_267]]
+                                                v352[3][v352[2]] = v_u_259[v_u_267]
+                                                goto l17
+                                            end
+                                            if v274 < 26 then
+                                                local v353 = v_u_258[v_u_267]
+                                                v_u_263[v353](v_u_263[v353 + 1])
+                                                v_u_262 = v353 - 1
+                                                goto l17
+                                            end
+                                            if v274 ~= 27 then
+                                                local v354 = v_u_260[v_u_267]
+                                                local v355 = 84
+                                                local v356 = 4503599627370495
+                                                local v357 = nil
+                                                local v358 = 0
+                                                local v359 = nil
+                                                local v360 = 93
+                                                local v361 = nil
+                                                while true do
+                                                    while v355 <= 38 do
+                                                        if v355 == 38 then
+                                                            v357 = 12
+                                                            local v362 = 51
+                                                            local v363
+                                                            if v_u_252[1][27][9]((v_u_252[1][27][11](v_u_252[1][27][9](v355), v274))) < v274 then
+                                                                v363 = v355 or v274
+                                                            else
+                                                                v363 = v274
+                                                            end
+                                                            v355 = v362 + v363
+                                                        else
+                                                            v356 = v_u_252[1][27]
+                                                            v355 = -22 + (v_u_252[1][27][6](v274 - v274 - v355) + v274)
+                                                        end
+                                                    end
+                                                    if v355 <= 72 then
+                                                        break
+                                                    end
+                                                    if v355 < 84 then
+                                                        v356 = v356[v357]
+                                                        v357 = v_u_252[1][27]
+                                                        local _ = v274 <= v355 + v355 - v355 and v274
+                                                        v355 = 72 + (v274 - v274)
+                                                    else
+                                                        v358 = v358 * v356
+                                                        v355 = 33 + v_u_252[1][27][12](v_u_252[1][27][13](v_u_252[1][27][7](v355), v274) - v355)
+                                                    end
+                                                end
+                                                local v364 = 15
+                                                local v365 = v357[v364]
+                                                local v366 = 27
+                                                while true do
+                                                    while v366 <= 27 do
+                                                        if v366 == 5 then
+                                                            v364 = v364[v361]
+                                                            v366 = 32 + v_u_252[1][27][14](v_u_252[1][27][7](v274) + v366 + v274, v274)
+                                                        else
+                                                            v364 = v_u_252[1][27]
+                                                            v366 = 10 + (v_u_252[1][27][7](v366) + v274 - v366 + v274)
+                                                        end
+                                                    end
+                                                    if v366 ~= 62 then
+                                                        break
+                                                    end
+                                                    v361 = 8
+                                                    local v367 = -3901
+                                                    local v368 = v_u_252[1][27][11]
+                                                    local v369
+                                                    if v274 == v274 or not v366 then
+                                                        v369 = v274
+                                                    else
+                                                        v369 = v366
+                                                    end
+                                                    v366 = v367 + (v368(v369 == v366 and v274 and v274 or v366, v274) - v366)
+                                                end
+                                                local v370 = v_u_257[v_u_267]
+                                                local v371 = 31
+                                                while true do
+                                                    while v371 > 31 and v371 < 114 do
+                                                        v371 = -134217638 + v_u_252[1][27][9](v_u_252[1][27][10](v_u_252[1][27][12](v274 + v274), v274), v274)
+                                                        v359 = v274
+                                                    end
+                                                    if v371 > 114 then
+                                                        break
+                                                    end
+                                                    if v371 < 41 then
+                                                        v359 = v_u_257[v_u_267]
+                                                        v371 = 57 + (v_u_252[1][27][15](v_u_252[1][27][12](v371) + v274) + v371)
+                                                    elseif v371 > 41 and v371 < 116 then
+                                                        v370 = v370 - v359
+                                                        v371 = -3355443160 + v_u_252[1][27][13](v371 < v_u_252[1][27][11](v_u_252[1][27][14](v371, v274), v274) and v274 and v274 or v371, v274)
+                                                    end
+                                                end
+                                                local v372 = v364(v370 + v359)
+                                                local v373 = v_u_257[v_u_267]
+                                                local v374 = 5
+                                                while true do
+                                                    while true do
+                                                        while v374 <= 9 do
+                                                            if v374 == 9 then
+                                                                if v365 then
+                                                                    v365 = v_u_257[v_u_267]
+                                                                end
+                                                                v374 = 57 + v_u_252[1][27][9](v374 - v274 + v274 < v274 and v374 and v374 or v274, v374, v274)
+                                                            else
+                                                                v365 = v365(v372, v373)
+                                                                v374 = 79 + (v_u_252[1][27][9](v374, v374, v274) - v274 - v274 - v274)
+                                                            end
+                                                        end
+                                                        if v374 > 32 then
+                                                            break
+                                                        end
+                                                        local _ = v274 < v_u_252[1][27][10](v_u_252[1][27][9](v274, v274), v274) and v274
+                                                        v374 = 30 + (v274 + v274)
+                                                        v372 = v274
+                                                    end
+                                                    if v374 ~= 82 then
+                                                        break
+                                                    end
+                                                    local v375 = v365 - v372
+                                                    v372 = v_u_257[v_u_267]
+                                                    v365 = v372 <= v375
+                                                    v374 = -181 + (v274 + v374 + v274 - v274 + v374)
+                                                end
+                                                local v376 = v365 or v_u_257[v_u_267]
+                                                local v377 = 125
+                                                while v377 > 55 do
+                                                    if v377 >= 125 then
+                                                        v356 = v356(v376)
+                                                        v377 = 30 + (v_u_252[1][27][14](v_u_252[1][27][8](v_u_252[1][27][10](v377, v274), v274, v377), v274) + v274)
+                                                    else
+                                                        v376 = v_u_257[v_u_267]
+                                                        v356 = v356 + v376
+                                                        v377 = -4294967214 + (v_u_252[1][27][6]((v_u_252[1][27][8](v_u_252[1][27][14](v274, v274), v377))) - v274)
+                                                    end
+                                                end
+                                                local v378 = v358 + v356
+                                                local v379 = v360 + v378
+                                                local v380 = 28
+                                                while true do
+                                                    while v380 <= 28 do
+                                                        v_u_257[v_u_267] = v379
+                                                        v380 = 75 + v_u_252[1][27][14](v_u_252[1][27][8](v274 + v274) - v274, v274)
+                                                    end
+                                                    if v380 <= 46 then
+                                                        break
+                                                    end
+                                                    v379 = v_u_263
+                                                    v378 = v_u_258[v_u_267]
+                                                    v380 = 14 + v_u_252[1][27][12]((v_u_252[1][27][15](v274 + v274 - v274, v274)))
+                                                end
+                                                local v381 = v379[v378]
+                                                local v382 = v_u_263
+                                                local v383 = v354
+                                                local v384 = 91
+                                                while true do
+                                                    if v384 == 91 then
+                                                        v384 = 126 + v_u_252[1][27][10](v_u_252[1][27][9](v_u_252[1][27][12](v384), v384, v274) - v384, v274)
+                                                        v376 = 1
+                                                        continue
+                                                    end
+                                                    if v384 == 126 then
+                                                        local v385 = v354 + v376
+                                                        v382[v385] = v381
+                                                        local v386 = v381
+                                                        local v387 = 11
+                                                        while true do
+                                                            while true do
+                                                                if v387 == 11 then
+                                                                    v382 = v_u_263
+                                                                    v387 = 110 + v_u_252[1][27][12]((v_u_252[1][27][9](v_u_252[1][27][12](v274) + v274)))
+                                                                elseif v387 == 110 then
+                                                                    v387 = 116 + v_u_252[1][27][12](v_u_252[1][27][15](v274 + v274, v274, v274) <= v387 and v274 and v274 or v387)
+                                                                    v385 = v383
+                                                                elseif v387 == 117 then
+                                                                    local v388 = 54
+                                                                    local v389
+                                                                    if v387 <= v_u_252[1][27][7](v_u_252[1][27][12](v274) - v274) then
+                                                                        v389 = v387 or v274
+                                                                    else
+                                                                        v389 = v274
+                                                                    end
+                                                                    v387 = v388 + v389
+                                                                    v381 = v386
+                                                                elseif v387 == 80 then
+                                                                    v372 = v_u_261[v_u_267]
+                                                                    v387 = 4 + (v_u_252[1][27][7]((v_u_252[1][27][8](v387 - v274, v274, v387))) + v387)
+                                                                else
+                                                                    if v387 ~= 111 then
+                                                                        goto l710
+                                                                    end
+                                                                    v381 = v381[v372]
+                                                                    v387 = -1744830436 + (v_u_252[1][27][10](v_u_252[1][27][10](v387, v274) + v274, v274) - v274)
+                                                                end
+                                                            end
+                                                            ::l710::
+                                                            if v387 == 2 then
+                                                                v382[v385] = v381
+                                                                goto l17
+                                                            end
+                                                        end
+                                                    end
+                                                end
+                                            end
+                                            v_u_263[v_u_260[v_u_267]] = error
+                                        else
+                                            if v274 >= 21 then
+                                                if v274 ~= 22 then
+                                                    if v_u_271 then
+                                                        for v390, v391 in v_u_271 do
+                                                            if v390 >= 1 then
+                                                                v391[3] = v391
+                                                                v391[1] = v_u_263[v390]
+                                                                v391[2] = 1
+                                                                v_u_271[v390] = nil
+                                                            end
+                                                        end
+                                                    end
+                                                    return true, v_u_258[v_u_267], 1
+                                                end
+                                                if v_u_271 then
+                                                    for v392, v393 in v_u_271 do
+                                                        if v392 >= 1 then
+                                                            v393[3] = v393
+                                                            v393[1] = v_u_263[v392]
+                                                            v393[2] = 1
+                                                            v_u_271[v392] = nil
+                                                        end
+                                                    end
+                                                end
+                                                local v394 = v_u_260[v_u_267]
+                                                return false, v394, v394
+                                            end
+                                            if v274 == 20 then
+                                                v_u_263[v_u_256[v_u_267]] = p_u_217.BU
+                                            else
+                                                v_u_263[v_u_258[v_u_267]] = pcall
+                                            end
+                                        end
+                                    elseif v274 < 33 then
+                                        if v274 < 30 then
+                                            if v274 == 29 then
+                                                v_u_263[v_u_256[v_u_267]] = p_u_251[v_u_258[v_u_267]][v_u_263[v_u_260[v_u_267]]]
+                                            else
+                                                v_u_263[v_u_258[v_u_267]] = tick
+                                            end
+                                        elseif v274 < 31 then
+                                            if v_u_263[v_u_258[v_u_267]] == v_u_263[v_u_260[v_u_267]] then
+                                                v_u_267 = v_u_256[v_u_267]
+                                            end
+                                        elseif v274 == 32 then
+                                            v_u_268 = v_u_258[v_u_267]
+                                            for v395 = 1, v_u_268 do
+                                                v_u_263[v395] = v_u_265[v395]
+                                            end
+                                            v_u_266 = v_u_268 + 1
+                                        elseif not v_u_263[v_u_256[v_u_267]] then
+                                            v_u_267 = v_u_258[v_u_267]
+                                        end
+                                    elseif v274 < 35 then
+                                        if v274 == 34 then
+                                            v_u_262 = v_u_260[v_u_267]
+                                            v_u_263[v_u_262]()
+                                            v_u_262 = v_u_262 - 1
+                                        else
+                                            v_u_263[v_u_260[v_u_267]] = task
+                                        end
+                                    elseif v274 < 36 then
+                                        v_u_263[v_u_258[v_u_267]] = v_u_261[v_u_267] < v_u_255[v_u_267]
+                                    elseif v274 == 37 then
+                                        v_u_263[v_u_260[v_u_267]] = buffer
+                                    else
+                                        v_u_263[v_u_256[v_u_267]] = v_u_263[v_u_260[v_u_267]] .. v_u_259[v_u_267]
+                                    end
+                                end
+                                goto l17
+                            end
+                            if v274 < 114 then
+                                if v274 >= 95 then
+                                    if v274 < 104 then
+                                        if v274 < 99 then
+                                            if v274 < 97 then
+                                                if v274 == 96 then
+                                                    if v_u_263[v_u_258[v_u_267]] == v_u_261[v_u_267] then
+                                                        v_u_267 = v_u_260[v_u_267]
+                                                    end
+                                                else
+                                                    local v396 = v_u_256[v_u_267]
+                                                    v_u_263[v396] = v_u_263[v396](v_u_263[v396 + 1])
+                                                    v_u_262 = v396
+                                                end
+                                            elseif v274 == 98 then
+                                                if v_u_263[v_u_258[v_u_267]] >= v_u_263[v_u_260[v_u_267]] then
+                                                    v_u_267 = v_u_256[v_u_267]
+                                                end
+                                            else
+                                                v_u_263[v_u_256[v_u_267]] = script
+                                            end
+                                        elseif v274 >= 101 then
+                                            if v274 >= 102 then
+                                                if v274 == 103 then
+                                                    v_u_263[v_u_258[v_u_267]] = tonumber
+                                                else
+                                                    v_u_263[v_u_260[v_u_267]] = p_u_217.SU
+                                                end
+                                            else
+                                                v_u_263[v_u_258[v_u_267]] = rawget
+                                            end
+                                        else
+                                            if v274 ~= 100 then
+                                                if v_u_271 then
+                                                    for v397, v398 in v_u_271 do
+                                                        if v397 >= 1 then
+                                                            v398[3] = v398
+                                                            v398[1] = v_u_263[v397]
+                                                            v398[2] = 1
+                                                            v_u_271[v397] = nil
+                                                        end
+                                                    end
+                                                end
+                                                return true, v_u_256[v_u_267], 0
+                                            end
+                                            local v399 = v_u_259[v_u_267][4]
+                                            local v400 = #v399
+                                            local v401 = v400 > 0 and {} or false
+                                            if v401 then
+                                                for v402 = 1, v400 do
+                                                    local v403 = v399[v402]
+                                                    local v404 = v403[3]
+                                                    local v405 = v403[2]
+                                                    if v404 == 0 then
+                                                        if not v_u_271 then
+                                                            v_u_271 = {}
+                                                        end
+                                                        local v406 = v_u_271[v405]
+                                                        if not v406 then
+                                                            v406 = {
+                                                                [3] = v_u_263,
+                                                                [2] = v405
+                                                            }
+                                                            v_u_271[v405] = v406
+                                                        end
+                                                        v401[v402 - 1] = v406
+                                                    elseif v404 == 1 then
+                                                        v401[v402 - 1] = v_u_263[v405]
+                                                    else
+                                                        v401[v402 - 1] = p_u_251[v405]
+                                                    end
+                                                end
+                                            end
+                                            local v407 = p_u_217[v_u_261[v_u_267]](v401)
+                                            v_u_263[v_u_260[v_u_267]] = v407
+                                        end
+                                    elseif v274 >= 109 then
+                                        if v274 >= 111 then
+                                            if v274 < 112 then
+                                                local v408 = v_u_256[v_u_267]
+                                                v_u_263[v408] = v_u_263[v408](v_u_252[2](v_u_263, v408 + 1, v_u_262))
+                                                v_u_262 = v408
+                                            elseif v274 == 113 then
+                                                v_u_263[v_u_260[v_u_267]] = v_u_263[v_u_256[v_u_267]] * v_u_259[v_u_267]
+                                            else
+                                                v_u_263[v_u_260[v_u_267]] = v_u_263[v_u_256[v_u_267]] % v_u_259[v_u_267]
+                                            end
+                                        elseif v274 == 110 then
+                                            local v409 = v_u_256[v_u_267]
+                                            if v_u_271 then
+                                                for v410, v411 in v_u_271 do
+                                                    if v409 <= v410 then
+                                                        v411[3] = v411
+                                                        v411[1] = v_u_263[v410]
+                                                        v411[2] = 1
+                                                        v_u_271[v410] = nil
+                                                    end
+                                                end
+                                            end
+                                        else
+                                            local v412 = p_u_251[v_u_256[v_u_267]]
+                                            v_u_263[v_u_260[v_u_267]] = v412[3][v412[2]][v_u_259[v_u_267]]
+                                        end
+                                    elseif v274 < 106 then
+                                        if v274 == 105 then
+                                            v_u_263[v_u_260[v_u_267]] = p_u_217.MU
+                                        else
+                                            v_u_263[v_u_258[v_u_267]] = typeof
+                                        end
+                                    elseif v274 >= 107 then
+                                        if v274 == 108 then
+                                            v_u_262 = v_u_260[v_u_267]
+                                            v_u_263[v_u_262] = v_u_263[v_u_262]()
+                                        else
+                                            v_u_263[v_u_258[v_u_267]] = v_u_255[v_u_267] * v_u_263[v_u_256[v_u_267]]
+                                        end
+                                    else
+                                        v_u_263[v_u_258[v_u_267]] = p_u_217.AU
+                                    end
+                                elseif v274 < 85 then
+                                    if v274 >= 80 then
+                                        if v274 >= 82 then
+                                            if v274 < 83 then
+                                                v_u_263[v_u_260[v_u_267]] = v_u_263[v_u_258[v_u_267]] == v_u_263[v_u_256[v_u_267]]
+                                            elseif v274 == 84 then
+                                                local v413 = v_u_256[v_u_267]
+                                                v_u_263[v413](v_u_252[2](v_u_263, v413 + 1, v_u_262))
+                                                v_u_262 = v413 - 1
+                                            else
+                                                v_u_269 = {
+                                                    [5] = v_u_272,
+                                                    [2] = v_u_273,
+                                                    [4] = v_u_270,
+                                                    [3] = v_u_269
+                                                }
+                                                local v414 = v_u_258[v_u_267]
+                                                v_u_270 = v_u_263[v414 + 2] + 0
+                                                v_u_272 = v_u_263[v414 + 1] + 0
+                                                v_u_273 = v_u_263[v414] - v_u_270
+                                                v_u_267 = v_u_260[v_u_267]
+                                            end
+                                        elseif v274 == 81 then
+                                            v_u_263[v_u_258[v_u_267]] = v_u_263[v_u_260[v_u_267]] ^ v_u_263[v_u_256[v_u_267]]
+                                        else
+                                            v_u_263[v_u_260[v_u_267]] = newproxy
+                                        end
+                                    elseif v274 < 78 then
+                                        if v274 == 77 then
+                                            v_u_273 = v_u_269[2]
+                                            v_u_272 = v_u_269[5]
+                                            v_u_270 = v_u_269[4]
+                                            v_u_269 = v_u_269[3]
+                                        else
+                                            v_u_263[v_u_260[v_u_267]] = next
+                                        end
+                                    elseif v274 ~= 79 then
+                                        v_u_263[v_u_256[v_u_267]] = game
+                                    end
+                                elseif v274 < 90 then
+                                    if v274 < 87 then
+                                        if v274 == 86 then
+                                            v_u_263[v_u_260[v_u_267]] = v_u_259[v_u_267] - v_u_261[v_u_267]
+                                        else
+                                            v_u_263[v_u_258[v_u_267]][v_u_263[v_u_260[v_u_267]]] = v_u_263[v_u_256[v_u_267]]
+                                        end
+                                    elseif v274 >= 88 then
+                                        if v274 == 89 then
+                                            v_u_263[v_u_256[v_u_267]] = p_u_217.VU
+                                        else
+                                            v_u_269 = {
+                                                [5] = v_u_272,
+                                                [2] = v_u_273,
+                                                [4] = v_u_270,
+                                                [3] = v_u_269
+                                            }
+                                            v_u_262 = v_u_258[v_u_267]
+                                            local v417 = v_u_252[1][8](function(...)
+                                                -- upvalues: (ref) v_u_252
+                                                v_u_252[3]()
+                                                for v415, v416 in ... do
+                                                    v_u_252[3](true, v415, v416)
+                                                end
+                                            end)
+                                            v417(v_u_263[v_u_262], v_u_263[v_u_262 + 1], v_u_263[v_u_262 + 2])
+                                            v_u_273 = v417
+                                            v_u_267 = v_u_256[v_u_267]
+                                        end
+                                    else
+                                        v_u_273 = v_u_273 + v_u_270
+                                        local v418
+                                        if v_u_270 <= 0 then
+                                            v418 = v_u_272 <= v_u_273
+                                        else
+                                            v418 = v_u_273 <= v_u_272
+                                        end
+                                        if v418 then
+                                            v_u_263[v_u_256[v_u_267] + 3] = v_u_273
+                                            v_u_267 = v_u_258[v_u_267]
+                                        end
+                                    end
+                                elseif v274 < 92 then
+                                    if v274 == 91 then
+                                        v_u_263[v_u_258[v_u_267]] = v_u_263[v_u_256[v_u_267]][v_u_263[v_u_260[v_u_267]]]
+                                    elseif v_u_263[v_u_256[v_u_267]] >= v_u_255[v_u_267] then
+                                        v_u_267 = v_u_258[v_u_267]
+                                    end
+                                elseif v274 >= 93 then
+                                    if v274 == 94 then
+                                        v_u_263[v_u_260[v_u_267]] = v_u_263[v_u_258[v_u_267]] / v_u_263[v_u_256[v_u_267]]
+                                    else
+                                        v_u_263[v_u_260[v_u_267]] = select
+                                    end
+                                else
+                                    v_u_263[v_u_260[v_u_267]] = v_u_252[1][23](v_u_263[v_u_256[v_u_267]], v_u_263[v_u_258[v_u_267]])
+                                end
+                            else
+                                if v274 >= 133 then
+                                    if v274 < 143 then
+                                        if v274 < 138 then
+                                            if v274 >= 135 then
+                                                if v274 >= 136 then
+                                                    if v274 == 137 then
+                                                        v_u_263[v_u_260[v_u_267]] = v_u_252[1][23](v_u_263[v_u_258[v_u_267]], v_u_261[v_u_267])
+                                                    else
+                                                        v_u_263[v_u_258[v_u_267]] = v_u_263[v_u_260[v_u_267]] - v_u_261[v_u_267]
+                                                    end
+                                                else
+                                                    v_u_263[v_u_258[v_u_267]] = v_u_255[v_u_267] >= v_u_261[v_u_267]
+                                                end
+                                            elseif v274 == 134 then
+                                                local v419 = v_u_258[v_u_267]
+                                                v_u_262 = v419 + v_u_256[v_u_267] - 1
+                                                v_u_263[v419] = v_u_263[v419](v_u_252[2](v_u_263, v419 + 1, v_u_262))
+                                                v_u_262 = v419
+                                            else
+                                                v_u_263[v_u_256[v_u_267]] = p_u_217._U
+                                            end
+                                            goto l17
+                                        end
+                                        if v274 < 140 then
+                                            if v274 == 139 then
+                                                v_u_263[v_u_256[v_u_267]] = v_u_263[v_u_260[v_u_267]] <= v_u_259[v_u_267]
+                                            else
+                                                local v420 = p_u_251[v_u_256[v_u_267]]
+                                                v_u_263[v_u_258[v_u_267]] = v420[3][v420[2]][v_u_263[v_u_260[v_u_267]]]
+                                            end
+                                            goto l17
+                                        end
+                                        if v274 >= 141 then
+                                            if v274 == 142 then
+                                                v_u_263[v_u_258[v_u_267]] = p_u_250
+                                            else
+                                                v_u_263[v_u_258[v_u_267]] = v_u_261[v_u_267] .. v_u_263[v_u_260[v_u_267]]
+                                            end
+                                            goto l17
+                                        end
+                                        local v421 = 1
+                                        local v422 = 0
+                                        local v423 = nil
+                                        local v424 = nil
+                                        while v421 <= 1 do
+                                            if v421 < 108 then
+                                                v421 = 106 + (v_u_252[1][27][12]((v_u_252[1][27][7](v_u_260[v_u_267]))) + v421 - v421)
+                                                v423 = 4503599627370495
+                                            end
+                                        end
+                                        local v425 = v422 * v423
+                                        local v426 = v_u_252[1][27]
+                                        local v427 = 10
+                                        local v428 = 9
+                                        local v429 = 11
+                                        while true do
+                                            while true do
+                                                if v427 < 76 then
+                                                    v426 = v426[v428]
+                                                    v427 = 82 + (v_u_252[1][27][11](v_u_252[1][27][11](v427, v_u_260[v_u_267]), v_u_260[v_u_267]) - v427 >= v_u_260[v_u_267] and v_u_260[v_u_267] or v_u_260[v_u_267])
+                                                else
+                                                    if v427 <= 76 then
+                                                        goto l302
+                                                    end
+                                                    v428 = v_u_252[1][27][15]
+                                                    v427 = 29 + (v_u_252[1][27][12]((v_u_252[1][27][15]((v_u_252[1][27][14](v_u_260[v_u_267], v_u_260[v_u_267]))))) + v_u_260[v_u_267])
+                                                end
+                                            end
+                                            ::l302::
+                                            if v427 < 97 and v427 > 10 then
+                                                local v430 = v_u_252[1][27][8]
+                                                local v431 = v_u_252[1][27]
+                                                local v432 = 126
+                                                while v432 <= 69 or v432 >= 126 do
+                                                    if v432 > 96 then
+                                                        v431 = v431[v429]
+                                                        v432 = 70 + (v274 - v432 - v_u_260[v_u_267] + v432 - v432)
+                                                    elseif v432 < 96 then
+                                                        v424 = v_u_260[v_u_267]
+                                                        local v433 = -105
+                                                        local v434 = v_u_252[1][27][15]
+                                                        local _ = v274 < v432 and v432
+                                                        local v435
+                                                        if v432 == v274 then
+                                                            v435 = v_u_260[v_u_267] or v274
+                                                        else
+                                                            v435 = v274
+                                                        end
+                                                        local _ = v274 <= v435 and v432
+                                                        v432 = v433 + v434(v432, v274)
+                                                        v429 = v274
+                                                    end
+                                                end
+                                                local v436 = v431(v429, v424) - v274
+                                                local v437 = v274
+                                                local v438 = -246
+                                                local v439 = 15
+                                                while true do
+                                                    while true do
+                                                        if v439 == 15 then
+                                                            v436 = v436 + v274
+                                                            local _ = v437 == v439 and v439
+                                                            v439 = 4 + (v439 - v439 + v_u_260[v_u_267] + v439)
+                                                        else
+                                                            if v439 ~= 34 then
+                                                                goto l333
+                                                            end
+                                                            v424 = v_u_257[v_u_267]
+                                                            v439 = -5701607 + (v_u_252[1][27][10](v_u_252[1][27][9](v437, v439), v_u_260[v_u_267]) + v439 - v439)
+                                                            v274 = v437
+                                                        end
+                                                    end
+                                                    ::l333::
+                                                    if v439 == 25 then
+                                                        local v440 = v430(v436, v274, v424)
+                                                        local v441 = 99
+                                                        while true do
+                                                            while true do
+                                                                if v441 > 99 then
+                                                                    v440 = v440 == v436
+                                                                    v441 = -25 + v_u_252[1][27][8](v_u_260[v_u_267] + v437 - v_u_260[v_u_267] - v441)
+                                                                else
+                                                                    if v441 >= 102 or v441 <= 13 then
+                                                                        goto l345
+                                                                    end
+                                                                    v436 = v_u_257[v_u_267]
+                                                                    local v442 = 3
+                                                                    if v_u_252[1][27][8](v441, v437, v_u_260[v_u_267]) + v_u_260[v_u_267] + v_u_260[v_u_267] == v441 then
+                                                                        v441 = v_u_260[v_u_267] or v441
+                                                                    end
+                                                                    v441 = v442 + v441
+                                                                end
+                                                            end
+                                                            ::l345::
+                                                            if v441 < 99 then
+                                                                if v440 then
+                                                                    v440 = v_u_260[v_u_267]
+                                                                end
+                                                                local v443 = v440 or v_u_257[v_u_267]
+                                                                local v444 = v437
+                                                                local v445 = 81
+                                                                while true do
+                                                                    if v445 == 81 then
+                                                                        v428 = v428(v443, v444, v_u_257[v_u_267])
+                                                                        local v446 = 43
+                                                                        local v447 = v_u_252[1][27][9]
+                                                                        local _ = v_u_252[1][27][10](v445, v_u_260[v_u_267]) <= v445 and v445
+                                                                        if v447(v445, v445) < v445 then
+                                                                            v445 = v_u_260[v_u_267] or v445
+                                                                        end
+                                                                        v445 = v446 + v445
+                                                                        continue
+                                                                    end
+                                                                    if v445 == 124 then
+                                                                        local v448 = v426(v428, v_u_260[v_u_267], v_u_257[v_u_267])
+                                                                        local v449 = v437
+                                                                        local v450 = 35
+                                                                        while true do
+                                                                            while true do
+                                                                                if v450 == 35 then
+                                                                                    v448 = v448 + v437
+                                                                                    v450 = 23 + (v_u_252[1][27][9]((v_u_252[1][27][12](v449 - v_u_260[v_u_267]))) + v_u_260[v_u_267])
+                                                                                else
+                                                                                    if v450 ~= 38 then
+                                                                                        goto l373
+                                                                                    end
+                                                                                    v425 = v425 + v448
+                                                                                    local v451 = -4980659
+                                                                                    local v452 = v_u_252[1][27][11]
+                                                                                    if v450 <= (v_u_252[1][27][10](v450, v_u_260[v_u_267]) <= v_u_260[v_u_267] and v450 and v450 or v_u_260[v_u_267]) then
+                                                                                        v450 = v_u_260[v_u_267] or v450
+                                                                                    end
+                                                                                    v450 = v451 + v452(v450, v_u_260[v_u_267])
+                                                                                end
+                                                                            end
+                                                                            ::l373::
+                                                                            if v450 == 77 then
+                                                                                v_u_257[v_u_267] = v438 + v425
+                                                                                v_u_263[v_u_260[v_u_267]] = buffer
+                                                                                goto l17
+                                                                            end
+                                                                        end
+                                                                    end
+                                                                end
+                                                            end
+                                                        end
+                                                    end
+                                                end
+                                            end
+                                        end
+                                    end
+                                    if v274 >= 148 then
+                                        if v274 >= 150 then
+                                            if v274 < 151 then
+                                                v_u_263[v_u_256[v_u_267]][v_u_255[v_u_267]] = v_u_263[v_u_258[v_u_267]]
+                                            elseif v274 == 152 then
+                                                v_u_263[v_u_256[v_u_267]] = v_u_263[v_u_258[v_u_267]] .. v_u_263[v_u_260[v_u_267]]
+                                            else
+                                                v_u_263[v_u_260[v_u_267]] = v_u_261[v_u_267] <= v_u_259[v_u_267]
+                                            end
+                                        elseif v274 == 149 then
+                                            v_u_263[v_u_260[v_u_267]] = v_u_263[v_u_256[v_u_267]][v_u_259[v_u_267]]
+                                        else
+                                            v_u_263[v_u_256[v_u_267]] = v_u_259[v_u_267] + v_u_263[v_u_260[v_u_267]]
+                                        end
+                                        goto l17
+                                    end
+                                    if v274 < 145 then
+                                        if v274 == 144 then
+                                            v_u_263[v_u_256[v_u_267]] = v_u_263
+                                        else
+                                            v_u_263[v_u_256[v_u_267]][v_u_263[v_u_258[v_u_267]]] = v_u_255[v_u_267]
+                                        end
+                                        goto l17
+                                    end
+                                    if v274 < 146 then
+                                        v_u_263[v_u_258[v_u_267]] = -v_u_263[v_u_260[v_u_267]]
+                                        goto l17
+                                    end
+                                    if v274 ~= 147 then
+                                        v_u_263[v_u_260[v_u_267]] = v_u_263[v_u_256[v_u_267]] == v_u_259[v_u_267]
+                                        goto l17
+                                    end
+                                    local v453 = 12
+                                    local v454 = 0 * 4503599627370495
+                                    local v455 = v_u_252[1][27][v453]
+                                    local v456 = 6
+                                    while true do
+                                        if v456 < 45 then
+                                            v453 = v_u_258[v_u_267]
+                                            v456 = 194 + (v_u_252[1][27][9](v274, v456, v274) - v274 - v456 - v274)
+                                            continue
+                                        end
+                                        if v456 > 6 then
+                                            local v457 = v453 + v_u_257[v_u_267]
+                                            local v458 = v274
+                                            local v459 = 11
+                                            while true do
+                                                while v459 > 80 do
+                                                    if v459 > 110 then
+                                                        if v459 < 117 then
+                                                            v459 = -71 + (v_u_252[1][27][13](v_u_252[1][27][15](v459 - v_u_258[v_u_267]), v_u_258[v_u_267]) - v274)
+                                                            v457 = v457 or v274
+                                                        else
+                                                            v457 = v458 <= v457
+                                                            v459 = 79 + (v_u_252[1][27][7]((v_u_252[1][27][8](v459, v274, v_u_258[v_u_267]))) + v274 < v459 and v459 and v459 or v_u_258[v_u_267])
+                                                        end
+                                                    else
+                                                        v459 = 101 + v_u_252[1][27][14](v_u_252[1][27][12]((v_u_252[1][27][9]((v_u_252[1][27][12](v274))))), v_u_258[v_u_267])
+                                                        v458 = v274
+                                                    end
+                                                end
+                                                if v459 <= 2 then
+                                                    break
+                                                end
+                                                if v459 == 80 then
+                                                    if v457 then
+                                                        v457 = v_u_257[v_u_267]
+                                                    end
+                                                    v459 = 233 + (v_u_252[1][27][7](v459) - v459 + v459 - v274)
+                                                else
+                                                    v457 = v457 - v458
+                                                    v459 = 98 + v_u_252[1][27][11](v_u_252[1][27][7](v274 + v_u_258[v_u_267] + v459), v_u_258[v_u_267])
+                                                end
+                                            end
+                                            local v460 = v274
+                                            local v461 = 14
+                                            while true do
+                                                while true do
+                                                    if v461 == 14 then
+                                                        v457 = v460 <= v457
+                                                        v461 = -167 + (v_u_252[1][27][7]((v_u_252[1][27][10](v461, v_u_258[v_u_267]))) + v274 + v461)
+                                                    else
+                                                        if v461 ~= 21 then
+                                                            goto l233
+                                                        end
+                                                        if v457 then
+                                                            v457 = v_u_257[v_u_267]
+                                                        end
+                                                        v457 = v457 or v_u_258[v_u_267]
+                                                        v461 = -35 + (v461 < v_u_252[1][27][14](v_u_252[1][27][15](v274), v_u_258[v_u_267]) + v_u_258[v_u_267] and v274 and v274 or v461)
+                                                    end
+                                                end
+                                                ::l233::
+                                                if v461 == 112 then
+                                                    local v462 = v455(v457)
+                                                    local v463 = 11
+                                                    while true do
+                                                        while true do
+                                                            if v463 == 11 then
+                                                                v463 = 99 + v_u_252[1][27][7]((v_u_252[1][27][14](v_u_252[1][27][6](v463) - v_u_258[v_u_267], v463)))
+                                                                v457 = v274
+                                                            elseif v463 == 110 then
+                                                                v462 = v462 + v457
+                                                                v463 = 117 + v_u_252[1][27][10](v_u_252[1][27][13](v_u_252[1][27][8](v_u_252[1][27][13](v463, v_u_258[v_u_267]), v463, v_u_258[v_u_267]), v_u_258[v_u_267]), v_u_258[v_u_267])
+                                                            else
+                                                                if v463 ~= 117 then
+                                                                    goto l250
+                                                                end
+                                                                v457 = v_u_257[v_u_267]
+                                                                v463 = -4294966951 + (v_u_252[1][27][6](v463 - v463 + v463) - v274)
+                                                            end
+                                                        end
+                                                        ::l250::
+                                                        if v463 == 80 then
+                                                            local v464 = v462 - v457 - v_u_258[v_u_267]
+                                                            local v465 = 27
+                                                            local v466 = 14
+                                                            while true do
+                                                                if v465 == 27 then
+                                                                    v454 = v454 + v464
+                                                                    v466 = v466 + v454
+                                                                    v465 = 89 + (v_u_252[1][27][8]((v_u_252[1][27][8](v_u_258[v_u_267], v_u_258[v_u_267], v465))) - v_u_258[v_u_267] - v465)
+                                                                    continue
+                                                                end
+                                                                if v465 == 62 then
+                                                                    v_u_257[v_u_267] = v466
+                                                                    local v467 = v_u_263
+                                                                    local v468 = v_u_258[v_u_267]
+                                                                    local v469 = 21
+                                                                    while true do
+                                                                        if v469 == 21 then
+                                                                            v464 = Enum
+                                                                            v469 = -140 + (v_u_252[1][27][10](v469 + v469, v_u_258[v_u_267]) + v469 + v274)
+                                                                            continue
+                                                                        end
+                                                                        if v469 == 112 then
+                                                                            v467[v468] = v464
+                                                                            goto l17
+                                                                        end
+                                                                    end
+                                                                end
+                                                            end
+                                                        end
+                                                    end
+                                                end
+                                            end
+                                        end
+                                    end
+                                end
+                                if v274 >= 123 then
+                                    if v274 < 128 then
+                                        if v274 < 125 then
+                                            if v274 == 124 then
+                                                v_u_263[v_u_258[v_u_267]] = v_u_263[v_u_260[v_u_267]] / v_u_261[v_u_267]
+                                            else
+                                                v_u_263[v_u_256[v_u_267]] = v_u_263[v_u_260[v_u_267]] >= v_u_263[v_u_258[v_u_267]]
+                                            end
+                                        else
+                                            if v274 < 126 then
+                                                local v470 = v_u_260[v_u_267]
+                                                local v471 = v_u_258[v_u_267]
+                                                v_u_262 = v470 + v471 - 1
+                                                if v_u_271 then
+                                                    for v472, v473 in v_u_271 do
+                                                        if v472 >= 1 then
+                                                            v473[3] = v473
+                                                            v473[1] = v_u_263[v472]
+                                                            v473[2] = 1
+                                                            v_u_271[v472] = nil
+                                                        end
+                                                    end
+                                                end
+                                                return true, v470, v471
+                                            end
+                                            if v274 == 127 then
+                                                local v474 = v_u_256[v_u_267]
+                                                local v475 = v_u_258[v_u_267]
+                                                local v476 = v_u_263[v474]
+                                                v_u_252[1][20](v_u_263, v474 + 1, v_u_262, v475 + 1, v476)
+                                            elseif v_u_263[v_u_258[v_u_267]] then
+                                                v_u_267 = v_u_256[v_u_267]
+                                            end
+                                        end
+                                    elseif v274 >= 130 then
+                                        if v274 >= 131 then
+                                            if v274 == 132 then
+                                                v_u_263[v_u_256[v_u_267]] = v_u_263[v_u_260[v_u_267]] % v_u_263[v_u_258[v_u_267]]
+                                            else
+                                                local v477 = v_u_260[v_u_267]
+                                                v_u_263[v477](v_u_263[v477 + 1], v_u_263[v477 + 2])
+                                                v_u_262 = v477 - 1
+                                            end
+                                        else
+                                            v_u_263[v_u_260[v_u_267]] = v_u_258
+                                        end
+                                    elseif v274 == 129 then
+                                        v_u_263[v_u_258[v_u_267]] = v_u_263[v_u_256[v_u_267]]
+                                    else
+                                        v_u_263[v_u_258[v_u_267]] = v_u_260
+                                    end
+                                elseif v274 < 118 then
+                                    if v274 >= 116 then
+                                        if v274 == 117 then
+                                            if v_u_271 then
+                                                for v478, v479 in v_u_271 do
+                                                    if v478 >= 1 then
+                                                        v479[3] = v479
+                                                        v479[1] = v_u_263[v478]
+                                                        v479[2] = 1
+                                                        v_u_271[v478] = nil
+                                                    end
+                                                end
+                                            end
+                                            return false, v_u_258[v_u_267], v_u_262
+                                        end
+                                        v_u_263[v_u_260[v_u_267]] = v_u_259[v_u_267] ^ v_u_263[v_u_256[v_u_267]]
+                                    elseif v274 == 115 then
+                                        v_u_263[v_u_256[v_u_267]] = warn
+                                    else
+                                        p_u_251[v_u_258[v_u_267]][v_u_263[v_u_260[v_u_267]]] = v_u_263[v_u_256[v_u_267]]
+                                    end
+                                elseif v274 < 120 then
+                                    if v274 == 119 then
+                                        for v480 = 1, v_u_256[v_u_267] do
+                                            v_u_263[v480] = v_u_265[v480]
+                                        end
+                                    else
+                                        v_u_263[v_u_258[v_u_267]] = v_u_257
+                                    end
+                                elseif v274 >= 121 then
+                                    if v274 == 122 then
+                                        local v481 = v_u_256[v_u_267]
+                                        v_u_263[v481] = v_u_263[v481](v_u_263[v481 + 1], v_u_263[v481 + 2])
+                                        v_u_262 = v481
+                                    else
+                                        v_u_263[v_u_258[v_u_267]] = p_u_251[v_u_260[v_u_267]]
+                                    end
+                                else
+                                    local v482 = v_u_260[v_u_267]
+                                    local v483 = v_u_263[v_u_258[v_u_267]]
+                                    v_u_263[v482 + 1] = v483
+                                    v_u_263[v482] = v483[v_u_261[v_u_267]]
+                                end
+                            end
+                            ::l17::
+                            v_u_267 = v_u_267 + 1
+                        end
+                    end)
+                    if v484 then
+                        if v485 then
+                            if v487 == 1 then
+                                return v_u_263[v486]()
+                            else
+                                return v_u_263[v486](v_u_252[2](v_u_263, v486 + 1, v_u_262))
+                            end
+                        end
+                        if v486 then
+                            return v_u_252[2](v_u_263, v486, v487)
+                        end
+                    else
+                        local v488
+                        if v_u_271 then
+                            v488 = v_u_267
+                            local v489 = v_u_271
+                            for v490, v491 in v_u_271 do
+                                if v490 >= 1 then
+                                    v491[3] = v491
+                                    v491[1] = v_u_263[v490]
+                                    v491[2] = 1
+                                    v489[v490] = nil
+                                end
+                            end
+                        else
+                            v488 = v_u_267
+                        end
+                        if v_u_252[1][4](v485) == "string" then
+                            if v_u_252[1][6](v485, ":(%d+)[:\r\n]") then
+                                v_u_252[4]("Luraph Script:" .. (v_u_254[v488] or "(internal)") .. ": " .. v_u_252[1][25](v485), 0)
+                            else
+                                v_u_252[4](v485, 0)
+                            end
+                        else
+                            v_u_252[4](v485, 0)
+                        end
+                    end
+                end
+            end
+            if p218[1816] then
+                v220 = p218[1816]
+            else
+                v220 = -919786488 + p_u_217.IU(p_u_217.xU((p_u_217.DU(p218[789]))) < p218[1305] and p218[15185] or p218[3386], p_u_217.m[3])
+                p218[1816] = v220
+            end
+        end
+    end,
+    ["DU"] = bit32.countlz,
+    ["sU"] = function(p492, p493, p494)
+        local v495 = 14523
+        local v496 = -4294967117
+        local v497 = p492.uU
+        if p494[31088] - p494[26742] < p492.m[7] then
+            p493 = p494[11655] or p493
+        end
+        p494[v495] = v496 + v497(p493 ~= p494[22947] and p494[3386] or p494[28075])
+        local v498 = -29161 + p492.cU(p492.HU(p494[2697], p494[15887]) - p494[11070] + p494[1305], p494[15887])
+        p494[32716] = v498
+        return v498
+    end,
+    ["A"] = function(p499, p500, p501, p502)
+        if p500 < 64 then
+            p501[13] = p499.OU
+            local v503
+            if p502[22947] then
+                v503 = p499:S(p502, p500)
+            else
+                v503 = -4294171442 + ((p502[11070] - p499.m[4] < p499.m[9] and p499.m[8] or p499.m[7]) - p502[11070] >= p502[2697] and p499.m[2] or p499.m[6])
+                p502[22947] = v503
+            end
+            return 10108, v503
+        else
+            if p500 <= 37 then
+                return nil, p500
+            end
+            p499:M(p501)
+            return 23723, p500
+        end
+    end,
+    ["r"] = function(p504)
+        local v_u_505 = p504[1]
+        local v_u_506 = p504[2]
+        local v_u_507 = p504[0]
+        local v_u_508 = p504[3]
+        local v_u_509 = p504[4]
+        local v_u_510 = p504[5]
+        return function()
+            -- upvalues: (copy) v_u_507, (copy) v_u_508, (copy) v_u_509, (copy) v_u_510, (copy) v_u_506, (copy) v_u_505
+            local v_u_511 = v_u_507()[v_u_508[3][v_u_508[2]]("$ENC_25Y21Y21L1L25X1426L21M247")][v_u_508[3][v_u_508[2]]("$ENC_25E22J2161A")]
+            v_u_509[3][v_u_509[2]] = v_u_510(function()
+                -- upvalues: (ref) v_u_506, (copy) v_u_511, (ref) v_u_505
+                for v512 = 1, 198 do
+                    v_u_506[3][v_u_506[2]] = v_u_511(v_u_511)(v_u_506[3][v_u_506[2]])
+                    if v512 % 25 == 0 then
+                        v_u_505(0.075)
+                    end
+                end
+            end)
+        end
+    end,
+    ["q"] = function(p513)
+        local v_u_514 = p513[0]
+        return function(p515, p516)
+            -- upvalues: (copy) v_u_514
+            local v517 = p516 or 1
+            if p515[v517] then
+                return p515[v517], v_u_514[3][v_u_514[2]](p515, v517 + 1)
+            end
+        end
+    end,
+    ["nq"] = function(_, p518, p519, p520, p521, p522, p523)
+        if p519 < 59 then
+            p520 = #p523[2][22]
+            p519 = 97
+        else
+            if p519 < 76 and p519 > 10 then
+                p523[2][22][p520 + 3] = p522
+                return p519, 7543, p520
+            end
+            if p519 < 97 and p519 > 59 then
+                p523[2][22][p520 + 2] = p518
+                return 59, 56426, p520
+            end
+            if p519 > 76 then
+                p523[2][22][p520 + 1] = p521
+                p519 = 76
+            end
+        end
+        return p519, nil, p520
+    end,
+    ["yq"] = function(p524, p525, p526, p527, p528, p529)
+        if p528 == 160 then
+            p524:_q(p526, p525, p527)
+        else
+            p524:Bq(p529, p526, p527)
+        end
+    end,
+    ["RU"] = function(_, ...)
+        return { (...)[...] }
+    end,
+    ["bq"] = function(p530, _, p531, _, _, p532, p533, p534, _, p535, _, p536, p537, _)
+        local v538 = p535[2][28](p537)
+        local v539 = p535[2][28](p537)
+        p536[1] = p531
+        local v540 = 18
+        local v541 = nil
+        while v540 <= 99 do
+            if v540 < 20 then
+                v540, v541 = p530:Lq(v541, v540)
+            elseif v540 > 73 and v540 < 102 then
+                p536[3] = v539
+                v540 = 102
+            elseif v540 < 73 and v540 > 18 then
+                p536[11] = p533
+                v540 = 99
+            elseif v540 < 99 and v540 > 20 then
+                p536[2] = p532
+                v540 = 20
+            end
+        end
+        p530:Zq(p534, p536)
+        return v540, v539, v538, nil, v541, nil
+    end,
+    ["Q"] = type,
+    ["Tq"] = function(_, _, _, _, p542)
+        return p542[2][37](), p542[2][37](), 77
+    end,
+    ["R"] = string.sub,
+    ["Zq"] = function(_, p543, p544)
+        p544[6] = p543
+    end,
+    ["J"] = function(p545)
+        local v_u_546 = p545[1]
+        local v_u_547 = p545[0]
+        return function(p548)
+            -- upvalues: (copy) v_u_546, (copy) v_u_547
+            local v549 = v_u_546(256, 0)
+            for v550 = 0, 255 do
+                v549[v550] = v550
+            end
+            local v551 = #p548
+            local v552 = 0
+            for v553 = 0, 255 do
+                v552 = (v552 + v549[v553] + v_u_547(p548, v553 % v551 + 1)) % 256
+                local v554 = v549[v552]
+                local v555 = v549[v553]
+                v549[v553] = v554
+                v549[v552] = v555
+            end
+            return {
+                ["x"] = 0,
+                ["y"] = 0,
+                ["st"] = v549
+            }
+        end
+    end,
+    ["dU"] = function(p556, p557, p558, p559, p560, p561)
+        if p559 < 79 then
+            if p560 ~= 107 then
+                local v562 = p558[21] < -240
+                p558[36] = -0.6111111111111112
+                p558[27] = v562
+            end
+            local v563
+            if p557[32716] then
+                v563 = p556:WU(p557, p559)
+            else
+                v563 = p556:sU(p559, p557)
+            end
+            return v563, 48901, p561
+        elseif p559 > 48 then
+            return p559, 42144, p556:UU(p561)
+        else
+            return p559, nil, p561
+        end
+    end,
+    ["BU"] = setmetatable,
+    ["LU"] = function(p564, p565, p566, p567, p568, p569, p570, p571)
+        p569[27][15] = p564.Y
+        local v572 = 8
+        while v572 <= 71 do
+            if v572 > 8 and v572 < 122 then
+                p568 = p569[40](p568, p565)(p566, p564.f, p567, p571, p569[35], p569[29], p569[31], p564.m, p570, p569[40])
+                v572 = 122
+            elseif v572 < 71 then
+                p569[27][11] = p564.T
+                p569[27][13] = p564.L.lrotate
+                v572 = 71
+            end
+        end
+        return { p569[40](p568, p565) }, p568
+    end,
+    ["UU"] = function(_, _)
+        return 84
+    end,
+    ["_q"] = function(_, p573, p574, p575)
+        p573[2][22][p575 + 2] = p574
+    end,
+    ["mq"] = function(_, p576, p577)
+        local v578 = p576 * 128
+        p577[1][15] = p577[1][15] + 1
+        return v578
+    end,
+    ["wU"] = function(p579, p580, p581, p582)
+        if p580 > 17 then
+            if p582[1][37] == p582[1][21] then
+                local v583
+                v583, p581 = p579:PU(p582, p581)
+                if v583 ~= nil then
+                    return p580, { p579.H(v583) }, p581
+                end
+            end
+            return p580, 38594, p581
+        end
+        if p580 >= 60 then
+            return p580, nil, p581
+        end
+        local v584, v585 = p579:JU(p582, p581, p580)
+        return v584, 59193, v585
+    end,
+    ["cU"] = bit32.bor,
+    ["Oq"] = function(_, p586, p587, p588, p589, p590, p591, p592, p593)
+        if p589 ~= 49 then
+            p593[p587] = p592
+            return p589, 57309, p592
+        end
+        local v594 = (p586 - p588) / 8
+        p590[p587] = p591
+        return 92, nil, v594
+    end,
+    ["d"] = string.unpack,
+    ["lU"] = function(p595, p596, _)
+        p596[1][34] = p595.s
+        p596[1][22] = p595.s
+        return 0
+    end,
+    ["L"] = bit32,
+    ["dq"] = function(_, _, p597, p598, _)
+        return 52, p598[2][28](p597)
+    end,
+    ["Y"] = bit32.bxor,
+    ["Aq"] = function(_, p599, p600, p601, p602)
+        local v603 = 98
+        local v604 = nil
+        while v603 ~= 89 do
+            v604 = p599[2][34][p600]
+            v603 = 89
+        end
+        local v605 = #v604
+        v604[v605 + 1] = p602
+        v604[v605 + 2] = p601
+        v604[v605 + 3] = 10
+    end,
+    ["xq"] = function(p606, _, p607, p608, _, p609, _, p610, _, _, _, _, p611, _)
+        local v612 = nil
+        local v613 = 38
+        local v614 = nil
+        local v615 = nil
+        local v616 = nil
+        local v617 = nil
+        repeat
+            local v618
+            v618, v615, v613, v612, v616, v614, v617 = p606:Hq(v612, v613, p608, v614, v615, v616, v617)
+        until v618 ~= 54259 and v618 == 45540
+        local v619 = v612 % 8
+        local v620 = nil
+        local v621 = nil
+        local v622 = nil
+        for v623 = 114, 307, 77 do
+            if v623 > 114 then
+                local v624
+                p611, v624, v621 = p606:Fq(v622, v621, p609, v617, p611)
+                if v624 == 51715 then
+                    break
+                end
+                if v624 ~= nil then
+                    return v614, v617, v622, v615, { p606.H(v624) }, v620, p611, v613, v621, v619
+                end
+            elseif v623 < 191 then
+                v622 = (v616 - v615) / 8
+                v620 = (v612 - v619) / 8
+            end
+        end
+        p607[p610] = v622
+        return v614, v617, v622, v615, nil, v620, p611, v613, v621, v619
+    end,
+    ["f"] = function(...)
+        (...)[...] = nil
+    end,
+    ["gU"] = function(_, p625, p626, p627, p628)
+        p626[p628] = p625[2][16][p627]
+    end,
+    ["rU"] = function(_, p629, _)
+        return p629[1][35]()
+    end,
+    ["WU"] = function(_, p630, _)
+        return p630[32716]
+    end,
+    ["z"] = function(p631)
+        local v_u_632 = p631[2]
+        local v_u_633 = p631[0]
+        local v_u_634 = p631[1]
+        return function(p635, p636, p637, p638)
+            -- upvalues: (copy) v_u_634, (copy) v_u_632, (copy) v_u_633
+            local v639 = p636 or 1
+            local v640 = p637 or v639
+            if v_u_634[3][v_u_634[2]][p635] then
+                local v641 = v_u_634[3][v_u_634[2]][p635]
+                local v642 = {}
+                for v643 = v639, v640 do
+                    v642[#v642 + 1] = v641[v643]
+                end
+                return v_u_632[3][v_u_632[2]](v642)
+            else
+                local v644 = v_u_633
+                local v645 = ""
+                local v646 = {}
+                local v647 = {}
+                for v648 = 1, #p635 do
+                    local v649 = 0
+                    local v650 = 255
+                    while v649 < v650 do
+                        local v651 = (v649 + v650 + 1) // 2
+                        if v645 .. v644[v651] <= p635 then
+                            v649 = v651
+                        else
+                            v650 = v651 - 1
+                        end
+                    end
+                    v645 = v645 .. v644[v649]
+                    v646[#v646 + 1] = v649
+                    if v639 <= v648 and v648 <= v640 then
+                        v647[#v647 + 1] = v649
+                    end
+                end
+                if v645 == p635 then
+                    if not p638 then
+                        v_u_634[3][v_u_634[2]][p635] = v646
+                    end
+                    return v_u_632[3][v_u_632[2]](v647)
+                else
+                    while true do
+
+                    end
+                end
+            end
+        end
+    end,
+    ["xU"] = bit32.countrz,
+    ["fq"] = function(p652, p653)
+        local v654 = 64
+        local v655 = nil
+        local v656 = nil
+        while true do
+            while v654 ~= 64 do
+                if v654 == 31 then
+                    v654 = 114
+                    v656 = 1
+                elseif v654 == 114 then
+                    repeat
+                        local v657
+                        v655, v657 = p652:Nq(v655, nil, v656, p653)
+                        v656 = p652:mq(v656, p653)
+                    until v657 < 128
+                    return { v655 }
+                end
+            end
+            v654 = 31
+            v655 = 0
+        end
+    end,
+    ["uq"] = function(_, p658, p659, p660, p661, p662)
+        if p660 == 96 then
+            return p661, 49318, 145
+        end
+        if p660 == 111 then
+            p662[10] = p658
+        elseif p660 == 81 then
+            return 1, 49318, p659
+        end
+        return p661, nil, p659
+    end,
+    ["Hq"] = function(p663, p664, p665, p666, p667, p668, p669, p670)
+        if p665 > 38 and p665 < 77 then
+            return 45540, p668, p665, p666[2][37](), p669, p667, p666[2][37]()
+        end
+        if p665 > 72 then
+            p668 = p669 % 8
+            p665 = 72
+        elseif p665 < 72 then
+            local v671, v672, v673 = p663:Tq(p667, p665, p669, p666)
+            return 54259, p668, v673, p664, v671, v672, p670
+        end
+        return nil, p668, p665, p664, p669, p667, p670
+    end,
+    ["Cq"] = function(p674, p675, p676, p677)
+        if p675 == 19 then
+            return 59713, 86, p677[1][36]()
+        end
+        if p675 ~= 86 then
+            return nil, p675, p676
+        end
+        local v678 = p674:lq(p677, p676)
+        return { p674.H(v678) }, p675, p676
+    end,
+    ["m"] = {
+        18599,
+        4294171506,
+        919786522,
+        994993091,
+        2851483894,
+        2380154069,
+        3923668283,
+        1363537535,
+        1837959718
+    },
+    ["Uq"] = function(_, p679, _, p680, _)
+        return 50, p680[2][28](p679)
+    end,
+    ["B"] = function(p681, p682, p683, p684)
+        while p683 == 103 do
+            p684[15] = 1
+            if p682[29350] then
+                p683 = p682[29350]
+            else
+                p682[27085] = -2380154052 + (p681.xU((p681.YU(p682[17234] - p681.m[5]))) + p681.m[6])
+                p682[200] = -18650 + (p681.HU((p682[4692] <= p683 and p681.m[2] or p681.m[7]) ~= p682[4692] and p682[2697] or p682[2697], p682[4692]) + p681.m[1])
+                p683 = -3375162148 + (p681.uU(p681.m[6] + p681.m[1]) - p681.m[3] + p681.m[6])
+                p682[29350] = p683
+            end
+        end
+        p681:_(p684)
+        p684[17] = p681.W
+        p684[18] = nil
+        p684[19] = nil
+        p684[20] = nil
+        return p683
+    end,
+    ["zq"] = function(p685, p686)
+        local v687 = 96
+        local v688 = nil
+        while true do
+            while v687 <= 18 or v687 >= 96 do
+                if v687 < 63 then
+                    return { v688 }
+                end
+                if v687 > 63 then
+                    v688, v687 = p685:iq(v688, p686, v687)
+                end
+            end
+            p686[1][15] = p686[1][15] + 1
+            v687 = 18
+        end
+    end,
+    ["v"] = function(p689, p690, p691, p692, p693)
+        if p691 < 75 then
+            p690[8] = p689.C
+            return p692, 55337, p691
+        end
+        local v694 = p689.l
+        local v695
+        if p693[17234] then
+            v695 = p693[17234]
+        else
+            p693[2697] = 1837959894 + (p693[3583] - p693[32032] - p693[3583] - p689.m[9] - p693[32032])
+            v695 = -372094491 + p689.IU(p689.m[1] - p693[3583] - p693[22917] <= p689.m[3] and p689.m[7] or p689.m[6], p689.m[2])
+            p693[17234] = v695
+        end
+        return v694, 32626, v695
+    end,
+    ["PU"] = function(_, p696, p697)
+        for v698 = 43, 107, 5 do
+            if v698 == 48 then
+                return { p696[1][30] }, p697
+            end
+            p697 = 104
+        end
+        return nil, p697
+    end,
+    ["U"] = table.move,
+    ["G"] = function(p699, _, _, p700, p701)
+        local v702 = nil
+        local v703 = 63
+        while true do
+            local v704
+            v703, v704, v702 = p699:n(v702, p701, p700, v703)
+            if v704 == 34848 then
+                break
+            end
+            local _ = v704 == 53381
+        end
+        p701[21] = nil
+        p701[22] = nil
+        p701[23] = nil
+        return v703, v702
+    end,
+    ["h"] = select,
+    ["vq"] = function(_, p705, p706, p707)
+        p707[p706 + 2] = p705
+    end,
+    ["e"] = function()
+        return function(p708, p709)
+            if #p708 == 0 then
+                return ""
+            end
+            local v710 = p708[1]
+            local v711 = p709 or ""
+            for v712 = 2, #p708 do
+                v710 = v710 .. v711 .. p708[v712]
+            end
+            return v710
+        end
+    end,
+    ["Yq"] = function(_, p713, p714)
+        if p713 > 85 then
+            return p714 + 1
+        end
+        local _ = p713 < 187
+        return p714
+    end,
+    ["FU"] = bit32.rshift,
+    ["ZU"] = function(p715, _, p716, p717)
+        p717[27][12] = p715.D
+        if p716[22238] then
+            return p716[22238]
+        end
+        local v718 = 101 + p715.YU(p715.cU(p716[28075], p716[2017], p716[200]) - p716[1305] - p715.m[5], p716[691], p716[24471])
+        p716[22238] = v718
+        return v718
+    end,
+    ["sq"] = function(p719, _, p720, p721)
+        p721[37] = nil
+        p721[38] = nil
+        local v722 = 70
+        while true do
+            while v722 > 70 do
+                if v722 <= 90 then
+                    p719:Qq(p721)
+                    p721[39] = nil
+                    return v722
+                end
+                local v723
+                v723, v722 = p719:hq(v722, p721, p720)
+                local _ = v723 == 60547
+            end
+            local v724
+            v724, v722 = p719:aq(v722, p720, p721)
+            local _ = v724 == 38169
+        end
+    end,
+    ["cq"] = function(p725, p726, p727, p728, p729)
+        local v730 = nil
+        local v731 = nil
+        for v732 = 108, 539, 84 do
+            if v732 < 192 then
+                v730 = p728[2][34][p727]
+            elseif v732 < 276 and v732 > 108 then
+                v731 = #v730
+            elseif v732 > 192 and v732 < 360 then
+                v730[v731 + 1] = p729
+            else
+                if v732 > 360 then
+                    v730[v731 + 3] = 3
+                    return
+                end
+                if v732 > 276 then
+                    if v732 < 444 then
+                        p725:vq(p726, v731, v730)
+                    end
+                end
+            end
+        end
+    end,
+    ["Jq"] = function(p_u_733, p_u_734, _, p735)
+        local v736 = 13
+        while v736 ~= 8 do
+            p_u_734[28] = p_u_733.vU
+            p_u_734[29] = function()
+                -- upvalues: (copy) p_u_734, (copy) p_u_733
+                local v737 = p_u_733:zq({ p_u_734 })
+                if v737 ~= nil then
+                    return p_u_733.H(v737)
+                end
+            end
+            if p735[15887] then
+                v736 = p735[15887]
+            else
+                v736 = -55 + p_u_733.HU(p_u_733.FU(p_u_733.FU(p735[15185], v736) - p735[3583], p735[29350]), p735[789])
+                p735[15887] = v736
+            end
+        end
+        p_u_734[30] = {}
+        p_u_734[31] = function()
+            -- upvalues: (copy) p_u_734
+            local v738 = { p_u_734 }
+            local v739 = nil
+            local v740 = nil
+            for v741 = 106, 251, 22 do
+                if v741 >= 128 then
+                    v738[1][15] = v739
+                    return v740
+                end
+                v740, v739 = v738[1][26]("<I4", v738[1][18], v738[1][15])
+            end
+        end
+        p_u_734[32] = error
+        p_u_734[33] = function()
+            -- upvalues: (copy) p_u_734, (copy) p_u_733
+            local v742 = p_u_733:Pq({ p_u_734, p_u_734[12] })
+            return p_u_733.H(v742)
+        end
+        p_u_734[34] = nil
+        p_u_734[35] = nil
+        p_u_734[36] = nil
+        return v736
+    end,
+    ["zU"] = function(_, p743)
+        return { p743 }
+    end,
+    ["Lq"] = function(_, _, _)
+        return 73, {}
+    end,
+    ["vU"] = table.create,
+    ["QU"] = function()
+        -- failed to decompile
+    end,
+    ["s"] = nil,
+    ["eU"] = function(p744, p745, p746, p747, p748, p749)
+        local v750 = p745[2][36]()
+        if p745[2][16][v750] then
+            p744:gU(p745, p747, v750, p748)
+        else
+            local v751 = v750 / 4
+            local v752 = {
+                [2] = v751 - v751 % 1,
+                [3] = v750 % 4
+            }
+            for v753 = 7, 279, 105 do
+                if v753 < 217 and v753 > 7 then
+                    p745[2][16][v750] = v752
+                else
+                    if v753 > 112 then
+                        p747[p748] = v752
+                        break
+                    end
+                    if v753 < 112 and p746 == 67 then
+                        local v754 = 46
+                        while v754 < 53 do
+                            local v755
+                            v755, v754 = p744:qU(v754, p749)
+                            if v755 ~= nil then
+                                return { p744.H(v755) }
+                            end
+                        end
+                        if p746 then
+                            return { 165 }
+                        end
+                    end
+                end
+            end
+        end
+        return nil
+    end,
+    ["y"] = function(p756, p757, p758, p759)
+        p759[20] = p756.U
+        if p757[3386] then
+            return p757[3386]
+        end
+        p757[15185] = 17 + (p756.TU(p756.YU(p757[11655] - p757[32032], p757[2697]), p757[27085]) >= p757[22917] and p757[3583] or p757[4692])
+        p757[15484] = -2851483753 + ((p756.m[1] < p756.m[4] and p756.m[5] or p757[27085]) - p757[200] - p757[11655] - p757[27085])
+        local v760 = 2851483967 + (p756.YU(p756.HU(p756.m[1] - p756.m[5], p758), p757[4692]) - p756.m[5])
+        p757[3386] = v760
+        return v760
+    end,
+    ["p"] = function(p761)
+        local v_u_762 = p761[0]
+        local v_u_763 = p761[2]
+        local v_u_764 = p761[1]
+        return function(p765, p766, p767, p768)
+            -- upvalues: (copy) v_u_763, (copy) v_u_762, (copy) v_u_764
+            local v769 = p766 or 1
+            local v770 = p767 or #p765
+            if v_u_763[3][v_u_763[2]][p765] then
+                local v771 = v_u_763[3][v_u_763[2]][p765]
+                local v772 = {}
+                for v773 = v769, v770 do
+                    v772[#v772 + 1] = v_u_762[v771[v773]]
+                end
+                return v_u_764(v772)
+            end
+            local v774 = {}
+            local v775 = ""
+            local v776 = {}
+            for v777 = 1, #p765 do
+                local v778 = false
+                for v779 = 0, 255 do
+                    if p765 < v775 .. v_u_762[v779] then
+                        v778 = true
+                        local v780 = v779 - 1
+                        v775 = v775 .. v_u_762[v780]
+                        v776[#v776 + 1] = v780
+                        if v769 <= v777 and v777 <= v770 then
+                            v774[#v774 + 1] = v_u_762[v780]
+                        end
+                        break
+                    end
+                end
+                if not v778 then
+                    v775 = v775 .. v_u_762[255]
+                    v776[#v776 + 1] = 255
+                    if v769 <= v777 and v777 <= v770 then
+                        v774[#v774 + 1] = v_u_762[255]
+                    end
+                end
+            end
+            if p765 == v775 then
+                if not p768 then
+                    v_u_763[3][v_u_763[2]][p765] = v776
+                end
+                return v_u_764(v774)
+            else
+                while true do
+
+                end
+            end
+        end
+    end,
+    ["bU"] = function(p781, p782, p783, p784, p785, p786, p787, p788, p789)
+        if p787 == 107 then
+            local v790
+            v790, p785 = p781:LU(p782, p789, p783, p785, p788, p786, p784)
+            if v790 ~= nil then
+                return { p781.H(v790) }, p785
+            end
+        end
+        return 15631, p785
+    end,
+    ["wq"] = function(_, p791)
+        local v792 = 55
+        local v793 = nil
+        local v794 = nil
+        while v792 > 42 do
+            v794, v793 = p791[1][26]("<d", p791[1][18], p791[1][15])
+            v792 = 42
+        end
+        p791[1][15] = v793
+        return { v794 }
+    end,
+    ["Pq"] = function(p795, p796)
+        local v797, v798 = p796[1][26]("<i8", p796[1][18], p796[1][15])
+        if p796[2] ~= p796[1][27] then
+            p795:pq(v798, p796)
+        end
+        return { v797 }
+    end,
+    ["Rq"] = function(p799, _, p800)
+        p800[1305] = 3675919508 + (p799.IU(p800[22917]) - p799.m[9] - p799.m[9] - p800[17234])
+        local v801 = -4267704211 + p799.TU(p799.oU(p799.oU(p800[15484], p800[32032]), p800[27085]) - p800[29350], p800[27085])
+        p800[5154] = v801
+        return v801
+    end,
+    ["t"] = function()
+        return function(p802, p803)
+            local v804 = 1
+            local v805 = 0
+            while p802 > 0 and p803 > 0 do
+                local v806 = p802 % 2
+                local v807 = p803 % 2
+                if v806 ~= v807 then
+                    v805 = v805 + v804
+                end
+                p802 = (p802 - v806) / 2
+                p803 = (p803 - v807) / 2
+                v804 = v804 * 2
+            end
+            if p802 >= p803 then
+                p803 = p802
+            end
+            while p803 > 0 do
+                local v808 = p803 % 2
+                if v808 > 0 then
+                    v805 = v805 + v804
+                end
+                p803 = (p803 - v808) / 2
+                v804 = v804 * 2
+            end
+            return v805
+        end
+    end,
+    ["j"] = bit32.rshift,
+    ["_"] = function(p809, p810)
+        p810[16] = p809.s
+    end,
+    ["pq"] = function(_, p811, p812)
+        p812[1][15] = p811
+    end,
+    ["pU"] = function(p813, _, p814)
+        local v815 = 85 + p813.xU(p813.YU((p813.YU(p814[3583]))) + p814[11655])
+        p814[24471] = v815
+        return v815
+    end,
+    ["CU"] = function(p816, p817, p818, p819, p820, p821)
+        while true do
+            while p817 ~= 44 do
+                if p817 == 27 then
+                    p817 = 62
+                    for v822 = 1, p818 do
+                        local v823, v824 = p816:fU(nil, p820)
+                        if v823 ~= nil then
+                            return p817, { p816.H(v823) }, p819
+                        end
+                        p816:hU(v824, p821, v822, p820)
+                    end
+                elseif p817 == 62 then
+                    local v825 = p820[1][36]() - 32749
+                    local v826 = p820[1][28](v825)
+                    local v827 = 123
+                    local v828 = nil
+                    while true do
+                        while v827 ~= 123 do
+                            if v827 == 30 then
+                                v828 = v826[p820[1][36]()]
+                                v827 = 101
+                            elseif v827 == 101 then
+                                v827 = p816:lU(p820, v827)
+                            elseif v827 == 0 then
+                                p820[1][16] = p816.s
+                                return v827, { v828 }, v825
+                            end
+                        end
+                        if p820[1][40] ~= p820[1][27] then
+                            for v829 = 64, 288, 112 do
+                                local v830 = p816:QU(v826, v829, p820, v825)
+                                if v830 ~= nil then
+                                    return v829, { p816.H(v830) }, v825
+                                end
+                            end
+                            if p820[1][21] == p820[1][1] then
+                                local v831 = 73
+                                while v831 >= 73 do
+                                    if v831 > 20 then
+                                        if p820[1][27] then
+                                            return v827, {}, v825
+                                        end
+                                        v831 = 20
+                                    end
+                                end
+                                p820[1][10] = -94
+                                goto l19
+                            end
+                            if p821 then
+                                local v832 = 38
+                                while v832 <= 38 do
+                                    if v832 < 77 then
+                                        p820[1][27][3] = p820[1][34]
+                                        v832 = 77
+                                    end
+                                end
+                                p820[1][27][1] = v826
+                            end
+                        end
+                        ::l19::
+                        v827 = 30
+                    end
+                end
+            end
+            p820[1][24] = p821
+            p817 = 27
+        end
+    end,
+    ["mU"] = function(p833, p834, p835, p836, p837)
+        if p837 == 118 then
+            if p835[1][25] == p835[1][21] then
+                return {}, p837, p834
+            end
+            if p835[1][7] == p835[1][25] then
+                local v838 = 20
+                while true do
+                    while v838 ~= 20 do
+                        if v838 == 99 then
+                            return { p835[1][36] }, p837, p834
+                        end
+                    end
+                    if -p835[1][10] then
+                        return { p835[1][7] }, p837, p834
+                    end
+                    v838 = 99
+                end
+            end
+            if p836 > 37 then
+                p834 = p835[1][38]()
+            else
+                p834 = p833:NU(p834, p835)
+            end
+            p837 = 93
+        elseif p837 == 93 then
+            return 22346, p837, p834
+        end
+        return nil, p837, p834
+    end,
+    ["qq"] = function(_, _, p839)
+        return p839[28075]
+    end,
+    ["kq"] = function(p_u_840, p_u_841, p842, p843)
+        p_u_841[36] = function()
+            -- upvalues: (copy) p_u_841, (copy) p_u_840
+            local v844 = p_u_840:fq({ p_u_841 })
+            return p_u_840.H(v844)
+        end
+        if p843[691] then
+            return p843[691]
+        end
+        p843[26742] = -1363518866 + (p_u_840.YU(p843[22917]) + p_u_840.m[8] - p_u_840.m[1] - p843[32032])
+        local v845 = -73 + (((p843[1305] + p843[27085] > p843[200] and p843[15484] or p843[22917]) < p843[3386] and p843[1305] or p843[17234]) == p842 and p843[11070] or p843[1305])
+        p843[691] = v845
+        return v845
+    end,
+    ["Wq"] = function(p846, p847, _, _)
+        local v848 = nil
+        for v849 = 96, 132, 36 do
+            if v849 < 132 then
+                v848 = {
+                    nil,
+                    nil,
+                    nil,
+                    nil,
+                    nil,
+                    nil,
+                    nil,
+                    nil,
+                    p846.s,
+                    p846.s,
+                    nil
+                }
+            elseif v849 > 96 then
+                if p847[1] ~= v848 then
+                    v848[7] = p847[2][36]()
+                end
+            end
+        end
+        return p847[2][36]() - 15380, v848
+    end,
+    ["K"] = function(p850)
+        local v_u_851 = p850[0]
+        local v_u_852 = p850[5]
+        local v_u_853 = p850[2]
+        local v_u_854 = p850[1]
+        local v_u_855 = p850[4]
+        local v_u_856 = p850[6]
+        local v_u_857 = p850[3]
+        return function()
+            -- upvalues: (copy) v_u_851, (copy) v_u_856, (copy) v_u_853, (copy) v_u_857, (copy) v_u_854, (copy) v_u_855, (copy) v_u_852
+            v_u_851[3][v_u_851[2]] = v_u_856(2, v_u_853(function()
+                -- upvalues: (ref) v_u_857
+                return v_u_857.______
+            end, function()
+                -- upvalues: (ref) v_u_854
+                return v_u_854(2, "f")
+            end))
+            v_u_855[3][v_u_855[2]] = v_u_856(2, v_u_853(function()
+                -- upvalues: (ref) v_u_857
+                v_u_857.Parent = v_u_857
+            end, function()
+                -- upvalues: (ref) v_u_854
+                return v_u_854(2, "f")
+            end))
+            v_u_852[3][v_u_852[2]] = v_u_856(2, v_u_853(function()
+                -- upvalues: (ref) v_u_857
+                v_u_857:_______()
+            end, function()
+                -- upvalues: (ref) v_u_854
+                return v_u_854(2, "f")
+            end))
+        end
+    end,
+    ["aq"] = function(p_u_858, p859, p860, p_u_861)
+        if p859 == 70 then
+            return 38169, p_u_858:Xq(p_u_861, p859, p860)
+        end
+        p_u_861[37] = function()
+            -- upvalues: (copy) p_u_861, (copy) p_u_858
+            local v862 = { p_u_861 }
+            local v863 = 19
+            local v864 = nil
+            repeat
+                local v865
+                v865, v863, v864 = p_u_858:Cq(v863, v864, v862)
+            until v865 ~= 59713 and v865 ~= nil
+            return p_u_858.H(v865)
+        end
+        local v866
+        if p860[17757] then
+            v866 = p860[17757]
+        else
+            v866 = 149 + (p_u_858.DU((p_u_858.cU((p_u_858.HU(p860[1305], p860[27085]))))) - p860[11070])
+            p860[17757] = v866
+        end
+        return 38169, v866
+    end,
+    ["H"] = unpack,
+    ["Sq"] = function(_, p867, p868, p869)
+        p868[2][22][p867 + 2] = p869
+    end,
+    ["Z"] = bit32.bnot,
+    ["iq"] = function(_, _, p870, _)
+        return p870[1][2](p870[1][18], p870[1][15], p870[1][15]), 63
+    end,
+    ["a"] = string.gsub,
+    ["rq"] = function(p_u_871, p872, p873, p_u_874)
+        p_u_874[35] = function()
+            -- upvalues: (copy) p_u_874, (copy) p_u_871
+            local v875 = p_u_871:wq({ p_u_874 })
+            if v875 ~= nil then
+                return p_u_871.H(v875)
+            end
+        end
+        if p873[11172] then
+            return p_u_871:Kq(p873, p872)
+        end
+        local v876 = -1837959614 + (p_u_871.cU(p_u_871.IU(p_u_871.m[2] - p873[789]), p873[3386]) < p873[3583] and p_u_871.m[2] or p_u_871.m[9])
+        p873[11172] = v876
+        return v876
+    end,
+    ["EU"] = function(p877, p878, p879, p880)
+        if p880 >= 159 then
+            return p877:rU(p879, p878)
+        else
+            return p879[3]()
+        end
+    end,
+    ["O"] = function(p881, _, p882)
+        p882[3] = p881.h
+        p882[4] = nil
+        p882[5] = nil
+        p882[6] = nil
+        p882[7] = nil
+        p882[8] = nil
+        return nil
+    end,
+    ["eq"] = function(p883, p884, p885, p886)
+        while true do
+            while p886 <= 18 or p886 >= 96 do
+                if p886 > 63 then
+                    p884[21] = 9007199254740992
+                    if p885[28075] then
+                        p886 = p883:qq(p886, p885)
+                    else
+                        p886 = p883:tq(p886, p885)
+                    end
+                elseif p886 < 63 then
+                    p884[26] = p883.d
+                    p884[27] = {}
+                    p884[28] = nil
+                    p884[29] = nil
+                    p884[30] = nil
+                    return p886
+                end
+            end
+            p884[22] = p883.s
+            p884[23] = p883.IU
+            p884[24] = p883.s
+            p884[25] = tostring
+            if p885[31088] then
+                p886 = p885[31088]
+            else
+                p886 = -4294171396 + ((p883.FU(p883.xU(p883.m[2]), p885[32032]) == p885[9998] and p885[22947] or p883.m[2]) - p885[15185])
+                p885[31088] = p886
+            end
+        end
+    end,
+    ["I"] = function(p887, p888, _)
+        local v889 = 1837163960 + (p887.uU(p887.m[3] + p887.m[9]) - p887.m[2] + p887.m[3])
+        p888[32032] = v889
+        return v889
+    end,
+    ["uU"] = bit32.bnot,
+    ["Gq"] = function(p890, p891, p892, p893, p894, p895, p896, p897, p898, p899, p900, _, p901, p902, p903, p904, p905, p906, p907, p908)
+        local v909 = nil
+        local v910 = 26
+        while true do
+            while v910 > 26 do
+                local v911
+                v910, v911, v909 = p890:Oq(p902, p899, p893, v910, p907, p897, v909, p901)
+                if v911 == 57309 then
+                    if p893 == 0 then
+                        if p892[2][24] then
+                            p890:cq(p899, v909, p892, p904)
+                        elseif p898 ~= 57 then
+                            p906[p899] = p892[2][34][v909]
+                        end
+                    elseif p893 == 7 then
+                        p901[p899] = v909
+                    elseif p893 == 1 then
+                        p901[p899] = p899 + v909
+                    elseif p893 == 4 then
+                        p890:oq(p901, p899, v909)
+                    elseif p893 == 2 then
+                        local v912 = nil
+                        local v913 = 117
+                        repeat
+                            local v914
+                            v912, v914, v913 = p890:Mq(v912, p892, p906, v913, p899)
+                        until v914 ~= 19483 and v914 == 59564
+                        p892[2][22][v912 + 3] = v909
+                    end
+                    local v915 = 21
+                    while true do
+                        while v915 ~= 21 do
+                            if v915 == 112 then
+                                if p903 == 0 then
+                                    if not p892[2][24] then
+                                        p896[p899] = p892[2][34][p894]
+                                        return v915
+                                    end
+                                    local v916 = nil
+                                    local v917 = nil
+                                    for v918 = 48, 180, 44 do
+                                        if v918 == 136 then
+                                            v916[v917 + 1] = p904
+                                            v916[v917 + 2] = p899
+                                        elseif v918 == 48 then
+                                            v916 = p892[2][34][p894]
+                                        elseif v918 == 180 then
+                                            v916[v917 + 3] = 1
+                                        elseif v918 == 92 then
+                                            v917 = #v916
+                                        end
+                                    end
+                                    return v915
+                                elseif p903 == 7 then
+                                    p900[p899] = p894
+                                    return v915
+                                elseif p903 == 1 then
+                                    p900[p899] = p899 + p894
+                                    return v915
+                                elseif p903 == 4 then
+                                    p900[p899] = p899 - p894
+                                    return v915
+                                else
+                                    if p903 == 2 then
+                                        local v919 = 10
+                                        local v920 = nil
+                                        repeat
+                                            local v921
+                                            v919, v921, v920 = p890:nq(p899, v919, v920, p896, p894, p892)
+                                        until v921 ~= 56426 and v921 == 7543
+                                    end
+                                    return v915
+                                end
+                            end
+                        end
+                        v915 = 112
+                        if p905 == 0 then
+                            if p892[2][24] then
+                                p890:Aq(p892, p897, p899, p904)
+                            else
+                                p890:Vq(p895, p899, p892, p897)
+                            end
+                        elseif p905 == 7 then
+                            p907[p899] = p897
+                        elseif p905 == 1 then
+                            p907[p899] = p899 + p897
+                        elseif p905 == 4 then
+                            p907[p899] = p899 - p897
+                        elseif p905 == 2 then
+                            local v922 = nil
+                            for v923 = 62, 209, 49 do
+                                if v923 > 111 then
+                                    p890:yq(p899, p892, v922, v923, p897)
+                                elseif v923 <= 62 then
+                                    v922 = #p892[2][22]
+                                elseif p898 ~= 253 then
+                                    p892[2][22][v922 + 1] = p895
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+            p891[p899] = p908
+            v910 = 49
+        end
+    end,
+    ["hq"] = function(p924, p925, p926, p927)
+        if p925 > 104 then
+            return nil, p924:rq(p925, p927, p926)
+        else
+            return 60547, p924:kq(p926, p925, p927)
+        end
+    end,
+    ["yU"] = function(p928)
+        local v929 = {}
+        local v930, v931, v932 = p928:x(nil, v929, nil, nil)
+        local v933, v934 = p928:o(p928:O(nil, v929), v932, v930, v929)
+        local v935, v936 = p928:G(nil, p928:B(v930, p928:V(v934, v930, v933, v929), v929), v930, v929)
+        local v937, v938, v939, v940 = p928:aU(p928:sq(p928:Jq(v929, p928:eq(v929, v930, (p928:gq(v935, v929))), v930), v930, v929), v930, nil, nil, nil, v929)
+        local v941, _, v942 = p928:jU(v939, nil, v930, v938, v929, nil)
+        local v943 = 99
+        while true do
+            while v943 ~= 102 do
+                v943 = p928:ZU(v943, v930, v929)
+            end
+            local v944
+            v944, v942 = p928:bU(v931, v940, v937, v942, v936, v941, v929, v939)
+            if v944 == 15631 then
+                return
+            end
+            if v944 ~= nil then
+                return p928.H(v944)
+            end
+        end
+    end,
+    ["k"] = string,
+    ["kU"] = function(_, p945, p946, p947)
+        p947[1][34][p945] = { p946 }
+    end,
+    ["x"] = function(p948, _, p949, _, _)
+        p949[1] = nil
+        p949[2] = nil
+        local v950 = 37
+        local v951 = {}
+        while true do
+            while v950 <= 31 or v950 >= 64 do
+                if v950 > 37 then
+                    p949[2] = p948.k.byte
+                    if v951[32032] then
+                        v950 = p948:F(v951, v950)
+                    else
+                        v950 = p948:I(v951, v950)
+                    end
+                elseif v950 < 37 then
+                    return v951, {}, v950
+                end
+            end
+            p949[1] = {}
+            if v951[11070] then
+                v950 = v951[11070]
+            else
+                v951[22917] = 85 + p948.DU(p948.YU((p948.TU(p948.m[3], 14))) - p948.m[4])
+                v950 = -1363537471 + (p948.HU(p948.TU(p948.m[2], 22) >= p948.m[7] and p948.m[1] or p948.m[9], 24) <= p948.m[1] and p948.m[1] or p948.m[8])
+                v951[11070] = v950
+            end
+        end
+    end,
+    ["Qq"] = function(_, p_u_952)
+        p_u_952[38] = function()
+            -- upvalues: (copy) p_u_952
+            local v953 = { p_u_952 }
+            local v954 = v953[1][36]()
+            v953[1][15] = v953[1][15] + v954
+            return v953[1][9](v953[1][18], v953[1][15] - v954, v953[1][15] - 1)
+        end
+    end,
+    ["HU"] = bit32.lrotate,
+    ["X"] = setmetatable,
+    ["Fq"] = function(p955, p956, _, p957, p958, p959)
+        local v960 = p958 % 8
+        if p957 == 169 then
+            p959 = -217
+            if p956 then
+                local v961 = p955:Iq()
+                return p959, { p955.H(v961) }, v960
+            end
+        end
+        return p959, 51715, v960
+    end,
+    ["T"] = bit32.rrotate,
+    ["YU"] = bit32.band,
+    ["g"] = function()
+        return function(p962, p963)
+            for _, v964 in p962 do
+                if v964 == p963 then
+                    return true
+                end
+            end
+            return nil
+        end
+    end,
+    ["F"] = function(_, p965, _)
+        return p965[32032]
+    end,
+    ["u"] = bit32.bor
+}):yU()(...) 
