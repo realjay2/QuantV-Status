@@ -1,2 +1,23 @@
-local content = HttpGet("https://raw.githubusercontent.com/realjay2/QuantV-Status/refs/heads/main/dump.luae") --use this to fetch url link
-local response = HttpRequest("https://raw.githubusercontent.com/realjay2/QuantV-Status/refs/heads/main/dump.lua", "POST", {["Content-Type"] = "application/json"}, {key = "value"}) --use this to request api
+local HttpService = game:GetService("HttpService")
+
+-- GET request
+local content = game:HttpGet("https://raw.githubusercontent.com/realjay2/QuantV-Status/refs/heads/main/dump.lua")
+print(content)
+
+-- pick available request function
+local http_fn = (syn and syn.request) or request or http_request
+
+if http_fn then
+    local response = http_fn({
+        Url = "https://raw.githubusercontent.com/realjay2/QuantV-Status/refs/heads/main/dump.lua",
+        Method = "POST",
+        Headers = {
+            ["Content-Type"] = "application/json"
+        },
+        Body = HttpService:JSONEncode({
+            key = "value"
+        })
+    })
+
+    print(response and (response.Body or response.body))
+end
