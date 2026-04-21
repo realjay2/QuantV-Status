@@ -164,7 +164,6 @@ settings = {
 window = webview.create_window(
     "Luauth App",
     "https://luauth.org",
-    frameless=True,
     width=1400,
     height=900
 )
