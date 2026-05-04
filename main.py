@@ -165,7 +165,8 @@ window = webview.create_window(
     "Luauth App",
     "https://luauth.org",
     width=1400,
-    height=900
+    height=900,
+    frameless=True
 )
 
 webview.start(gui="edgechromium", user_agent=settings['user_agent'])
