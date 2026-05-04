@@ -1,171 +1,113 @@
-import webview
+import tkinter as tk
+import webbrowser
+import threading
+import time
 
-html = """
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-    margin: 0;
-    overflow: hidden;
-    font-family: Arial;
-}
+URL = "https://luauth.org"
 
-/* LOADING SCREEN */
-#loading {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
+class App:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Luauth App")
+        self.root.geometry("1400x900")
+        self.root.configure(bg="#111111")
+        self.root.overrideredirect(True)  # Remove default title bar
 
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 4px solid rgba(255,255,255,0.2);
-    border-top: 4px solid white;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin-bottom: 15px;
-}
+        self._offset_x = 0
+        self._offset_y = 0
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+        # Top bar
+        self.bar = tk.Frame(root, bg="#141414", height=32)
+        self.bar.pack(fill="x", side="top")
+        self.bar.bind("<ButtonPress-1>", self.start_drag)
+        self.bar.bind("<B1-Motion>", self.do_drag)
 
-/* TOP BAR */
-#bar {
-    height: 32px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background: rgba(20, 20, 20, 0.65);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    -webkit-app-region: drag;
-}
+        close_btn = tk.Label(self.bar, text="✕", bg="#141414", fg="white",
+                             width=4, cursor="hand2", font=("Arial", 11))
+        close_btn.pack(side="right", padx=4, pady=2)
+        close_btn.bind("<Button-1>", lambda e: root.destroy())
+        close_btn.bind("<Enter>", lambda e: close_btn.config(bg="#e74c3c"))
+        close_btn.bind("<Leave>", lambda e: close_btn.config(bg="#141414"))
 
-.btn {
-    width: 38px;
-    height: 28px;
-    margin-right: 4px;
-    color: white;
-    text-align: center;
-    line-height: 28px;
-    cursor: pointer;
-    border-radius: 6px;
-    -webkit-app-region: no-drag;
-}
+        min_btn = tk.Label(self.bar, text="—", bg="#141414", fg="white",
+                           width=4, cursor="hand2", font=("Arial", 11))
+        min_btn.pack(side="right", padx=4, pady=2)
+        min_btn.bind("<Button-1>", lambda e: root.iconify())
+        min_btn.bind("<Enter>", lambda e: min_btn.config(bg="#333"))
+        min_btn.bind("<Leave>", lambda e: min_btn.config(bg="#141414"))
 
-.btn:hover {
-    background: rgba(255,255,255,0.12);
-}
+        # Loading screen
+        self.loading_frame = tk.Frame(root, bg="#111111")
+        self.loading_frame.pack(fill="both", expand=True)
 
-#close:hover {
-    background: #e74c3c;
-}
+        self.loading_label = tk.Label(
+            self.loading_frame, text="Loading Luauth...",
+            bg="#111111", fg="white", font=("Arial", 16)
+        )
+        self.loading_label.place(relx=0.5, rely=0.5, anchor="center")
 
-/* SIDEBAR */
-#sidebar {
-    position: fixed;
-    top: 0;
-    right: -320px;
-    width: 320px;
-    height: 100%;
-    background: rgba(25,25,25,0.92);
-    backdrop-filter: blur(14px);
-    transition: 0.25s ease;
-    color: white;
-    padding: 20px;
-    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
-}
+        self.spinner_label = tk.Label(
+            self.loading_frame, text="◌", bg="#111111", fg="white", font=("Arial", 28)
+        )
+        self.spinner_label.place(relx=0.5, rely=0.42, anchor="center")
 
-#sidebar.open {
-    right: 0;
-}
+        # Sidebar
+        self.sidebar_open = False
+        self.sidebar = tk.Frame(root, bg="#191919", width=320)
+        self.sidebar.place(relx=1.0, rely=0, anchor="ne", relheight=1.0, width=320)
+        self.sidebar.place_forget()
 
-.sidebtn {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 8px;
-    cursor: pointer;
-}
+        tk.Label(self.sidebar, text="Menu", bg="#191919", fg="white",
+                 font=("Arial", 16, "bold")).pack(pady=(20, 10), padx=20, anchor="w")
 
-.sidebtn:hover {
-    background: rgba(255,255,255,0.15);
-}
+        for label in ["Settings", "Close UI"]:
+            btn = tk.Label(self.sidebar, text=label, bg="#2a2a2a", fg="white",
+                           font=("Arial", 11), cursor="hand2", pady=10, padx=10)
+            btn.pack(fill="x", padx=20, pady=5)
+            btn.bind("<Enter>", lambda e, b=btn: b.config(bg="#3a3a3a"))
+            btn.bind("<Leave>", lambda e, b=btn: b.config(bg="#2a2a2a"))
+            if label == "Close UI":
+                btn.bind("<Button-1>", lambda e: self.toggle_sidebar())
 
-/* CONTENT */
-#content {
-    height: calc(100vh - 32px);
-}
-</style>
-</head>
+        # Bind ESC to toggle sidebar
+        root.bind("<Escape>", lambda e: self.toggle_sidebar())
 
-<body>
+        # Animate spinner then open browser
+        threading.Thread(target=self.animate_and_launch, daemon=True).start()
 
-<!-- LOADING SCREEN -->
-<div id="loading">
-    <div class="spinner"></div>
-    Loading Luauth...
-</div>
+    def animate_and_launch(self):
+        frames = ["◌", "◎", "●", "◎"]
+        start = time.time()
+        while time.time() - start < 1.2:
+            for f in frames:
+                self.spinner_label.config(text=f)
+                time.sleep(0.15)
+        # Hide loading, open browser
+        self.loading_frame.pack_forget()
+        webbrowser.open(URL)
 
-<!-- TOP BAR -->
-<div id="bar">
-    <div class="btn">—</div>
-    <div class="btn" id="close">✕</div>
-</div>
+        # Show a "launched" message
+        done = tk.Label(self.root, text=f"Opened {URL} in your browser.",
+                        bg="#111111", fg="#aaaaaa", font=("Arial", 13))
+        done.pack(expand=True)
 
-<!-- SIDEBAR -->
-<div id="sidebar">
-    <h2>Menu</h2>
-    <div class="sidebtn">Settings</div>
-    <div class="sidebtn">Close UI</div>
-</div>
+    def toggle_sidebar(self):
+        self.sidebar_open = not self.sidebar_open
+        if self.sidebar_open:
+            self.sidebar.place(relx=1.0, rely=0, anchor="ne", relheight=1.0, width=320)
+        else:
+            self.sidebar.place_forget()
 
-<script>
-// ESC toggle sidebar
-document.addEventListener("keydown", function(e) {
-    if (e.key === "Escape") {
-        toggleSidebar();
-    }
-});
+    def start_drag(self, event):
+        self._offset_x = event.x
+        self._offset_y = event.y
 
-function toggleSidebar() {
-    document.getElementById("sidebar").classList.toggle("open");
-}
+    def do_drag(self, event):
+        x = self.root.winfo_pointerx() - self._offset_x
+        y = self.root.winfo_pointery() - self._offset_y
+        self.root.geometry(f"+{x}+{y}")
 
-// hide loading when page is ready
-window.onload = function () {
-    setTimeout(() => {
-        document.getElementById("loading").style.display = "none";
-    }, 1200); // small delay for smooth feel
-};
-</script>
 
-</body>
-</html>
-"""
-
-settings = {
-    'user_agent': 'LuauthClient/1.0 (CustomApp; Windows)'
-}
-
-window = webview.create_window(
-    "Luauth App",
-    "https://luauth.org",
-    width=1400,
-    height=900
-)
-
-webview.start(gui="edgechromium", user_agent=settings['user_agent'])
+root = tk.Tk()
+app = App(root)
+root.mainloop()
