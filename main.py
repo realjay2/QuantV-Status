@@ -141,11 +141,11 @@ window = webview.create_window(
     html=html,
     width=1400,
     height=900,
-    frameless=True,
-    user_agent=settings['user_agent']
+    frameless=True
 )
 
 webview.start(
     gui="edgechromium",
+    user_agent=settings['user_agent'],
     js_api=API()
 )
