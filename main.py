@@ -170,7 +170,14 @@ window.onload = function () {
 </body>
 </html>
 """
+class API:
+    def close(self):
+        webview.windows[0].destroy()
+        sys.exit()
 
+    def minimize(self):
+        webview.windows[0].minimize()
+        
 settings = {
     'user_agent': 'LuauthClient/1.0 (CustomApp; Windows)'
 }
@@ -183,4 +190,4 @@ window = webview.create_window(
     frameless=True
 )
 
-webview.start(gui="edgechromium", user_agent=settings['user_agent'])
+webview.start(gui="edgechromium", user_agent=settings['user_agent'], js_api=API())
