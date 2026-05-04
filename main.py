@@ -1,7 +1,11 @@
 import webview
 import os
 import random
-base_dir = os.path.dirname(os.path.abspath(__file__))
+import sys
+if getattr(sys, 'frozen', False):
+    base_dir = os.path.dirname(sys.executable)
+else:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
 output_dir = os.path.join(base_dir, "runtime", "ran")
 os.makedirs(output_dir, exist_ok=True)
 code = "".join(str(random.randint(0, 9)) for _ in range(16))
