@@ -2,15 +2,24 @@ import webview
 import os
 import random
 import sys
+
+settings = {
+    'user_agent': 'LuauthClient/1.0 (CustomApp; Windows)'
+}
+
 if getattr(sys, 'frozen', False):
     base_dir = os.path.dirname(sys.executable)
 else:
     base_dir = os.path.dirname(os.path.abspath(__file__))
+
 output_dir = os.path.join(base_dir, "runtime", "ran")
 os.makedirs(output_dir, exist_ok=True)
+
 code = "".join(str(random.randint(0, 9)) for _ in range(16))
 lua_content = f'print("{code}")'
+
 file_path = os.path.join(output_dir, f"{code}.lua")
+
 with open(file_path, "w", encoding="utf-8") as f:
     f.write(lua_content)
 
@@ -19,13 +28,8 @@ html = """
 <html>
 <head>
 <style>
-body {
-    margin: 0;
-    overflow: hidden;
-    font-family: Arial;
-}
+body { margin: 0; overflow: hidden; font-family: Arial; }
 
-/* LOADING SCREEN */
 #loading {
     position: fixed;
     width: 100%;
@@ -46,7 +50,6 @@ body {
     border-top: 4px solid white;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    margin-bottom: 15px;
 }
 
 @keyframes spin {
@@ -54,7 +57,6 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* TOP BAR */
 #bar {
     height: 32px;
     display: flex;
@@ -62,7 +64,6 @@ body {
     align-items: center;
     background: rgba(20, 20, 20, 0.65);
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
     -webkit-app-region: drag;
 }
@@ -70,24 +71,13 @@ body {
 .btn {
     width: 38px;
     height: 28px;
-    margin-right: 4px;
     color: white;
     text-align: center;
     line-height: 28px;
     cursor: pointer;
-    border-radius: 6px;
     -webkit-app-region: no-drag;
 }
 
-.btn:hover {
-    background: rgba(255,255,255,0.12);
-}
-
-#close:hover {
-    background: #e74c3c;
-}
-
-/* SIDEBAR */
 #sidebar {
     position: fixed;
     top: 0;
@@ -95,81 +85,49 @@ body {
     width: 320px;
     height: 100%;
     background: rgba(25,25,25,0.92);
-    backdrop-filter: blur(14px);
     transition: 0.25s ease;
     color: white;
     padding: 20px;
-    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
 }
 
-#sidebar.open {
-    right: 0;
-}
-
-.sidebtn {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.sidebtn:hover {
-    background: rgba(255,255,255,0.15);
-}
-
-/* CONTENT */
-#content {
-    height: calc(100vh - 32px);
-}
+#sidebar.open { right: 0; }
 </style>
 </head>
 
 <body>
 
-<!-- LOADING SCREEN -->
 <div id="loading">
     <div class="spinner"></div>
-    Loading Luauth...
+    Loading...
 </div>
 
-<!-- TOP BAR -->
 <div id="bar">
-    <div class="btn">—</div>
-    <div class="btn" id="close">✕</div>
+    <div class="btn" onclick="window.pywebview.api.minimize()">—</div>
+    <div class="btn" onclick="window.pywebview.api.close()">✕</div>
 </div>
 
-<!-- SIDEBAR -->
 <div id="sidebar">
     <h2>Menu</h2>
-    <div class="sidebtn">Settings</div>
-    <div class="sidebtn">Close UI</div>
 </div>
 
 <script>
-// ESC toggle sidebar
 document.addEventListener("keydown", function(e) {
     if (e.key === "Escape") {
-        toggleSidebar();
+        document.getElementById("sidebar").classList.toggle("open");
     }
 });
 
-function toggleSidebar() {
-    document.getElementById("sidebar").classList.toggle("open");
-}
-
-// hide loading when page is ready
 window.onload = function () {
     setTimeout(() => {
         document.getElementById("loading").style.display = "none";
-    }, 1200); // small delay for smooth feel
+    }, 1200);
 };
 </script>
 
 </body>
 </html>
 """
+
 class API:
     def close(self):
         webview.windows[0].destroy()
@@ -177,17 +135,17 @@ class API:
 
     def minimize(self):
         webview.windows[0].minimize()
-        
-settings = {
-    'user_agent': 'LuauthClient/1.0 (CustomApp; Windows)'
-}
 
 window = webview.create_window(
     "Luauth App",
-    "https://luauth.org",
+    html=html,
     width=1400,
     height=900,
-    frameless=True
+    frameless=True,
+    user_agent=settings['user_agent']
 )
 
-webview.start(gui="edgechromium", user_agent=settings['user_agent'], js_api=API())
+webview.start(
+    gui="edgechromium",
+    js_api=API()
+)
