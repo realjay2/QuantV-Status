@@ -1,4 +1,14 @@
 import webview
+import os
+import random
+base_dir = os.path.dirname(os.path.abspath(__file__))
+output_dir = os.path.join(base_dir, "runtime", "ran")
+os.makedirs(output_dir, exist_ok=True)
+code = "".join(str(random.randint(0, 9)) for _ in range(16))
+lua_content = f'print("{code}")'
+file_path = os.path.join(output_dir, f"{code}.lua")
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(lua_content)
 
 html = """
 <!DOCTYPE html>
