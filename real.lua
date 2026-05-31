@@ -718,7 +718,7 @@ elseif PlaceId == 2534724415 then
 		VehicleMods = Window:Tab({ Title = "Vehicle Mods", Icon = "car" }),
 		GunMods = Window:Tab({ Title = "Gun Mods", Icon = "axe" }),
 		Aimbot = Window:Tab({ Title = "Aimbot", Icon = "crosshair" }),
-		Robberies = Window:Tab({ Title = "Robberies", Icon = "piggy-bank", Locked = true }),
+		Robberies = Window:Tab({ Title = "Robberies", Icon = "piggy-bank", Locked = false }),
 		Automation = Window:Tab({ Title = "Automation", Icon = "bot" }),
 		Teleports = Window:Tab({ Title = "Teleports", Icon = "box" }),
 		Settings = Window:Tab({ Title = "Settings", Icon = "settings" })
