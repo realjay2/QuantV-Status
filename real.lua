@@ -536,7 +536,7 @@ elseif PlaceId == 2534724415 then
 	local FreecamLib = MainLoadstring(MainURL .. "Freecamlib.lua")
 	local HashLib = MainLoadstring("https://gist.githubusercontent.com/Retinalogic/36b1d62af63a122da264ac78f3128a63/raw/f7cdfe662fe1674c2f89307bce89e30ef636c99f/sha.lua")
 
-	local WindUI = MainLoadstring(MainURL .. "UILib/WindUI.lua")
+	local WindUI = MainLoadstring(MainURL .. "UILib/NewLIB/WindUI.lua")
 
 	local TeleportLocations = {
 		["Bank"] = Vector3.new(-976.613, 35.300, 432.653),
@@ -718,7 +718,7 @@ elseif PlaceId == 2534724415 then
 		VehicleMods = Window:Tab({ Title = "Vehicle Mods", Icon = "car" }),
 		GunMods = Window:Tab({ Title = "Gun Mods", Icon = "axe" }),
 		Aimbot = Window:Tab({ Title = "Aimbot", Icon = "crosshair" }),
-		Robberies = Window:Tab({ Title = "Robberies", Icon = "piggy-bank", Locked = false }),
+		Robberies = Window:Tab({ Title = "Robberies", Icon = "piggy-bank", Locked = true }),
 		Automation = Window:Tab({ Title = "Automation", Icon = "bot" }),
 		Teleports = Window:Tab({ Title = "Teleports", Icon = "box" }),
 		Settings = Window:Tab({ Title = "Settings", Icon = "settings" })
@@ -6264,89 +6264,7 @@ local WLNumber = math.random(1, 10000)
 		end
 	})
 
-CrasherExploit = Tabs.Private:Toggle({
-    Title = "Crash Server  👑",
-    Desc = "Starts lagging the server [Does Not Affect You]",
-    Value = false,
-    Callback = function(Value)
-        if Value then
-            _G.Conn = workspace.ChildAdded:Connect(function(obj)
-                if obj.Name == "OilAbsorbent" then
-                    task.delay(0.02, function()
-                        obj:Destroy()
-                    end)
-                end
-            end)
 
-            if not LocalPlayer.Character:FindFirstChild("Oil Absorbent") and not LocalPlayer.Backpack:FindFirstChild("Oil Absorbent") then
-                FE.ToolGiver:FireServer("Oil Absorbent")
-
-                WindUI:Notify({
-                    Title = "Server Crasher",
-                    Content = "Attempting to equip Tool!",
-                    Duration = 1.2, -- replaced GetPing()+1.2
-                })
-
-                local Start = tick()
-
-                -- replaced GetPing()+1 with a 1 second timeout
-                while not LocalPlayer.Backpack:FindFirstChild("Oil Absorbent") and tick() - Start < 1 do
-                    task.wait()
-                end
-            end
-
-            if LocalPlayer.Backpack:FindFirstChild("Oil Absorbent") then
-                LocalPlayer.Character.Humanoid:EquipTool(LocalPlayer.Backpack:FindFirstChild("Oil Absorbent"))
-                wait()
-            end
-
-            if LocalPlayer.Character:FindFirstChild("Oil Absorbent") then
-                local OilTool = LocalPlayer.Character:FindFirstChild("Oil Absorbent")
-                local CrasherEvent = OilTool:WaitForChild("UseEvent")
-
-                OilTool.Grip = CFrame.new(0,100,0)
-                for _, v in pairs(OilTool:GetChildren()) do
-                    if v:IsA("BasePart") then
-                        v.Massless = true
-                    end
-                end
-
-                LocalPlayer.Character.Humanoid:UnequipTools()
-                task.wait(0.2) -- replaced GetPing()
-                LocalPlayer.Character.Humanoid:EquipTool(OilTool)
-
-                task.spawn(function()
-                    while task.wait(0.06) do
-                        if not CrasherExploit.Value then
-                            break
-                        end
-
-                        pcall(function()
-                            for i,v in pairs(LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
-                                if v.Name == "ToolNoneAnim" then
-                                    v:Stop()
-                                end
-                            end
-                        end)
-
-                        for i = 1,24 do
-                            CrasherEvent:FireServer(true)
-                        end
-                    end
-                end)
-            else
-                CrasherExploit:Set(false)
-                WindUI:Notify({
-                    Title = "CustomFeatures",
-                    Content = "You need to have the DOT/FD Oil Absorbent Tool.",
-                    Duration = 5,
-                })
-            end
-        else
-            if _G.Conn then _G.Conn:Disconnect() end
-        end
-    end,
-})
 
 
 	Tabs.Private:Section({	Title = "Misc"})
@@ -6430,6 +6348,90 @@ CrasherExploit = Tabs.Private:Toggle({
 				})
 			end
 		end
+	})
+
+	CrasherExploit = Tabs.Settings:Toggle({
+		Title = "Crash Server  👑",
+		Desc = "Starts lagging the server [Does Not Affect You]",
+		Value = false,
+		Callback = function(Value)
+			if Value then
+				_G.Conn = workspace.ChildAdded:Connect(function(obj)
+					if obj.Name == "OilAbsorbent" then
+						task.delay(0.02, function()
+							obj:Destroy()
+						end)
+					end
+				end)
+
+				if not LocalPlayer.Character:FindFirstChild("Oil Absorbent") and not LocalPlayer.Backpack:FindFirstChild("Oil Absorbent") then
+					FE.ToolGiver:FireServer("Oil Absorbent")
+
+					WindUI:Notify({
+						Title = "Server Crasher",
+						Content = "Attempting to equip Tool!",
+						Duration = 1.2, -- replaced GetPing()+1.2
+					})
+
+					local Start = tick()
+
+					-- replaced GetPing()+1 with a 1 second timeout
+					while not LocalPlayer.Backpack:FindFirstChild("Oil Absorbent") and tick() - Start < 1 do
+						task.wait()
+					end
+				end
+
+				if LocalPlayer.Backpack:FindFirstChild("Oil Absorbent") then
+					LocalPlayer.Character.Humanoid:EquipTool(LocalPlayer.Backpack:FindFirstChild("Oil Absorbent"))
+					wait()
+				end
+
+				if LocalPlayer.Character:FindFirstChild("Oil Absorbent") then
+					local OilTool = LocalPlayer.Character:FindFirstChild("Oil Absorbent")
+					local CrasherEvent = OilTool:WaitForChild("UseEvent")
+
+					OilTool.Grip = CFrame.new(0,100,0)
+					for _, v in pairs(OilTool:GetChildren()) do
+						if v:IsA("BasePart") then
+							v.Massless = true
+						end
+					end
+
+					LocalPlayer.Character.Humanoid:UnequipTools()
+					task.wait(0.2) -- replaced GetPing()
+					LocalPlayer.Character.Humanoid:EquipTool(OilTool)
+
+					task.spawn(function()
+						while task.wait(0.06) do
+							if not CrasherExploit.Value then
+								break
+							end
+
+							pcall(function()
+								for i,v in pairs(LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
+									if v.Name == "ToolNoneAnim" then
+										v:Stop()
+									end
+								end
+							end)
+
+							for i = 1,24 do
+								CrasherEvent:FireServer(true)
+							end
+						end
+					end)
+				else
+					CrasherExploit:Set(false)
+					WindUI:Notify({
+						Title = "CustomFeatures",
+						Content = "You need to have the DOT/FD Oil Absorbent Tool.",
+						Duration = 5,
+					})
+				end
+			else
+				if _G.Conn then _G.Conn:Disconnect() end
+			end
+		end,
 	})
 
 	Tabs.Settings:Section({	Title = "Misc"})
