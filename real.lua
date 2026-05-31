@@ -536,7 +536,7 @@ elseif PlaceId == 2534724415 then
 	local FreecamLib = MainLoadstring(MainURL .. "Freecamlib.lua")
 	local HashLib = MainLoadstring("https://gist.githubusercontent.com/Retinalogic/36b1d62af63a122da264ac78f3128a63/raw/f7cdfe662fe1674c2f89307bce89e30ef636c99f/sha.lua")
 
-	local WindUI = MainLoadstring(MainURL .. "UILib/NewLIB/WindUI.lua")
+	local WindUI = MainLoadstring("https://raw.githubusercontent.com/realjay2/QuantV/refs/heads/main/FluentLib/WindUI.lua")
 
 	local TeleportLocations = {
 		["Bank"] = Vector3.new(-976.613, 35.300, 432.653),
