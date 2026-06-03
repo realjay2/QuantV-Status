@@ -57,7 +57,7 @@ if not LRM_ScriptVersion then _G.SoftAntiBan = true _G.RanERXX = false _G.Ignore
 
 if getgenv().SimpleSpyExecuted and LRM_ScriptVersion and not _G.SoftAntiBan then
 	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "ERX - Error";
+		Title = "FFX - Error";
 		Text = "A very RARE Error just Occured, Please report this to the discord.",
 	})
 	return
@@ -129,7 +129,7 @@ function MainLoadstring(ContentURL)
 		})
 
 		if not Response then
-			LocalPlayer:Kick("[ERX - Error]: Internal Failure.")
+			LocalPlayer:Kick("[FFX - Error]: Internal Failure.")
 			return coroutine.yield() and wait(9e9)
 		end
 
@@ -152,7 +152,7 @@ function MainLoadstring(ContentURL)
 		end
 	end
 
-	LocalPlayer:Kick("[ERX - Error]: Failed to find loadstring N°" .. tostring(LoadstringCount) .. ".")
+	LocalPlayer:Kick("[FFX - Error]: Failed to find loadstring N°" .. tostring(LoadstringCount) .. ".")
 	return coroutine.yield() and wait(9e9)
 end
 
@@ -163,7 +163,7 @@ if not LRM_IsUserPremium and LRM_UserNote ~= "Ad Reward" then
 	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/9b3252e2e2420a9aa5b891c76dff6e65.lua"))()
 	]])
 
-	return LocalPlayer:Kick("[ERX - Error]: Please first complete the key system.")
+	return LocalPlayer:Kick("[FFX - Error]: Please first complete the key system.")
 elseif _G.RanERXX then
 	return warn("Script cannot be executed twice")
 elseif PlaceId == 2534724415 then
@@ -222,11 +222,11 @@ elseif PlaceId == 2534724415 then
 	end
 
 	if LRM_ScriptVersion and not suc then
-		return LocalPlayer:Kick("[ERX - Error]: Could not obtain the script information.")
+		return LocalPlayer:Kick("[FFX - Error]: Could not obtain the script information.")
 	elseif LRM_ScriptVersion and MVersion ~= ActualVersion then
-		return LocalPlayer:Kick("[ERX - Error]: You are using an old version of the script, use the loadstring.")
+		return LocalPlayer:Kick("[FFX - Error]: You are using an old version of the script, use the loadstring.")
 	elseif LRM_ScriptVersion and MStatus ~= "Updated" then
-		return LocalPlayer:Kick("[ERX - Error]: " .. tostring(MStatus or "Unknown"))
+		return LocalPlayer:Kick("[FFX - Error]: " .. tostring(MStatus or "Unknown"))
 	elseif RVersion ~= ActualRVersion and not _G.IgnoreWarns then
 		local Bindable = Instance.new("BindableFunction")
 
@@ -252,19 +252,19 @@ elseif PlaceId == 2534724415 then
 		until ActualAction
 
 		if ActualAction == 2 then
-			return LocalPlayer:Kick("[ERX - Info]: You have selected the option to be kicked.")
+			return LocalPlayer:Kick("[FFX - Info]: You have selected the option to be kicked.")
 		end
 	end
 
 	StarterGui:SetCore("SendNotification", {
-		Title = "ERX";
-		Text = "ERX is loading, Please wait.";
+		Title = "FFX";
+		Text = "FFX is loading, Please wait.";
 		Duration = 3;
 	})
 
 	if LRM_IsUserPremium and LRM_UserNote ~= "Ad Reward" then
 		StarterGui:SetCore("SendNotification", {
-			Title = "ERX (PREMIUM)";
+			Title = "FFX (PREMIUM)";
 			Text = "Discord ID: " .. (LRM_LinkedDiscordID or "?");
 			Duration = 5;
 		})
@@ -352,7 +352,7 @@ elseif PlaceId == 2534724415 then
                         Detected = true
 
                         if not _G.SoftAntiBan then
-                            LocalPlayer:Kick("[ERX]: Anti-Ban, rejoining...")
+                            LocalPlayer:Kick("[FFX]: Anti-Ban, rejoining...")
 
                             task.delay(5, function()
                                 if InTeleport then return end
@@ -392,7 +392,7 @@ elseif PlaceId == 2534724415 then
 
                 if tick() - StartCheck > 2 then
                     StarterGui:SetCore("SendNotification", {
-                        Title = "ERX - Security",
+                        Title = "FFX - Security",
                         Text = "Attempting to load Anti-Ban...",
                         Duration = 2,
                     })
@@ -422,7 +422,7 @@ elseif PlaceId == 2534724415 then
         end
     else
 		StarterGui:SetCore("SendNotification", {
-			Title = "ERX - Security",
+			Title = "FFX - Security",
 			Text = "You are using the FREE version of the script, this means you do not have [Anti-Ban]. Be careful using external scripts",
 			Duration = 15,
 		})
@@ -491,7 +491,7 @@ elseif PlaceId == 2534724415 then
 	end
 
 	if not RealNetwork then
-		return LocalPlayer:Kick("[ERX - Error]: Failed to get Network (Please report this to the discord).")
+		return LocalPlayer:Kick("[FFX - Error]: Failed to get Network (Please report this to the discord).")
 	end
 
 	local SecureENV = getsenv(LocalPlayer.PlayerScripts:WaitForChild("Client Game Analytics", 9e9))
@@ -588,12 +588,12 @@ elseif PlaceId == 2534724415 then
 	local LogoScale = 1.75
 
 	local Window = WindUI:CreateWindow({
-		Title = "QuantV",
-		Icon = "rbxassetid://74904497738060",
+		Title = "FFX | ERLC",
+		Icon = "rbxassetid://80866753483011",
 		IconSize = UDim2.new(LogoScale, 0, LogoHeight * LogoScale, 0),
 		IconThemed = false,
-		Author = "By Kai",
-		Folder = "QuantV",
+		Author = "By Jayce",
+		Folder = "FFX/ERLC",
 		TabWidth = 160,
 		Size = UDim2.fromOffset(650, 460),
 		Transparent = true,
@@ -1029,7 +1029,7 @@ elseif PlaceId == 2534724415 then
 			if args[1] == "EXWLSV" and PrivateMembers[LocalPlayer.Name] then
 				WindUI:Notify({
 					Title = "Whitelist System",
-					Content = PlayerName .. " Is using ERX!",
+					Content = PlayerName .. " Is using FFX!",
 					Duration = 15,
 				})
 				return
@@ -1354,11 +1354,11 @@ elseif PlaceId == 2534724415 then
 			return Player and (Player:FindFirstChild("IsGameMod") or Player:FindFirstChild("IsGameStaff"))
 		end),
 
-		IsVisibleERXUser = (function(self, Player)
+		IsVisibleFFXUser = (function(self, Player)
 			if Player and Player:FindFirstChild("RoleplayInfo") and Player.RoleplayInfo:FindFirstChild("RoleplayName") then
 				local Name = Player.RoleplayInfo.RoleplayName.Value
 
-				return (string.len(Name) >= 6 and Name:sub(2,2) == "E" and Name:sub(4,4) == "R" and Name:sub(6,6) == "X")
+				return (string.len(Name) >= 6 and Name:sub(2,2) == "F" and Name:sub(4,4) == "F" and Name:sub(6,6) == "X")
 			end
 
 			return false
@@ -3240,7 +3240,7 @@ elseif PlaceId == 2534724415 then
 		if not LRM_IsUserPremium or LRM_UserNote == "Ad Reward" then
 			return _G.CarEarrape and WindUI:Notify({
 				Title = "Warning (Premium Feature)",
-				Content = "'Earrape' is a Premium feature, buy ERX Premium to be able to use this feature (check in the Discord Server how).",
+				Content = "'Earrape' is a Premium feature, buy FFX Premium to be able to use this feature (check in the Discord Server how).",
 				Duration = 10,
 			}) or nil
 		end
@@ -3265,7 +3265,7 @@ elseif PlaceId == 2534724415 then
 		if not LRM_IsUserPremium or LRM_UserNote == "Ad Reward" then
 			return _G.Sus and WindUI:Notify({
 				Title = "Warning (Premium Feature)",
-				Content = "'🥵' is a Premium feature, buy ERX Premium to be able to use this feature (check in the Discord Server how).",
+				Content = "'🥵' is a Premium feature, buy FFX Premium to be able to use this feature (check in the Discord Server how).",
 				Duration = 10,
 			}) or nil
 		end
@@ -3403,7 +3403,7 @@ elseif PlaceId == 2534724415 then
 					TeamName = "PRC MOD"
 					esp.box.Color = Color3.new(1, 0, 0.5)
 				elseif PrivateMembers[Player.Name] then
-					TeamName = "ERX PRIVATE"
+					TeamName = "FFX PRIVATE"
 					esp.name.Color = Color3.fromRGB(24, 39, 244)
 					esp.box.Color = Color3.fromRGB(24, 39, 244)
 				elseif Functions:IsMod(Player) and PlayerIsModAndEnabled then
@@ -3412,8 +3412,8 @@ elseif PlaceId == 2534724415 then
 				elseif Functions:IsWanted(Player) and _G.DifferenceWanted then
 					TeamName = "WANTED"
 					esp.box.Color = Color3.fromRGB(192, 121, 42)
-				elseif Functions:IsVisibleERXUser(Player) then
-					TeamName = "ERX USER"
+				elseif Functions:IsVisibleFFXUser(Player) then
+					TeamName = "FFX USER"
 					esp.box.Color = Color3.fromRGB(192, 93, 116)
 				else
 					esp.box.Color = Player.Team.TeamColor.Color
@@ -3571,8 +3571,8 @@ local WLNumber = math.random(1, 10000)
 		end
 	end
 
-	if not isfolder("ERX/config") then
-		makefolder("ERX/config")
+	if not isfolder("FFX/config") then
+		makefolder("FFX/config")
 	end
 
 	do
@@ -3710,7 +3710,7 @@ local WLNumber = math.random(1, 10000)
 			elseif Value then
 				WindUI:Notify({
 					Title = "Warning (Premium Feature)",
-					Content = "'Arrest Aura' is a Premium feature, buy ERX Premium to be able to use this feature (check in the Discord Server how).",
+					Content = "'Arrest Aura' is a Premium feature, buy FFX Premium to be able to use this feature (check in the Discord Server how).",
 					Duration = 10,
 				})
 			end
@@ -3727,7 +3727,7 @@ local WLNumber = math.random(1, 10000)
 				AutoArrestToggle:Set(false)
 				WindUI:Notify({
 					Title = "Warning (Premium Feature)",
-					Content = "'Auto Arrest' is a Premium feature, buy ERX Premium to be able to use this feature (check in the Discord Server how).",
+					Content = "'Auto Arrest' is a Premium feature, buy FFX Premium to be able to use this feature (check in the Discord Server how).",
 					Duration = 10,
 				})
 			elseif Value and not Functions:IsDisablerOn() then
@@ -3784,7 +3784,7 @@ local WLNumber = math.random(1, 10000)
 		if not LRM_IsUserPremium or LRM_UserNote == "Ad Reward" then
 			return WindUI:Notify({
 				Title = "Warning (Premium Feature)",
-				Content = "'Disable TP Check' is a Premium feature, buy ERX Premium to be able to use this feature (check in the Discord Server how).",
+				Content = "'Disable TP Check' is a Premium feature, buy FFX Premium to be able to use this feature (check in the Discord Server how).",
 				Duration = 10,
 			})
 		elseif not Functions:IsAlive(Humanoid) then 
@@ -4039,7 +4039,7 @@ local WLNumber = math.random(1, 10000)
 			elseif Value then
 				WindUI:Notify({
 					Title = "Warning (Premium Feature)",
-					Content = "'Instant Interact' is a Premium feature, buy ERX Premium to be able to use this feature (check in the Discord Server how).",
+					Content = "'Instant Interact' is a Premium feature, buy FFX Premium to be able to use this feature (check in the Discord Server how).",
 					Duration = 10,
 				})
 			end
@@ -4416,7 +4416,7 @@ local WLNumber = math.random(1, 10000)
 		if not LRM_IsUserPremium or LRM_UserNote == "Ad Reward" then
 			return _G.ExtendedPITHitbox and WindUI:Notify({
 				Title = "Warning (Premium Feature)",
-				Content = "'Extended PIT Hitbox' is a Premium feature, buy ERX Premium to be able to use this feature (check in the Discord Server how).",
+				Content = "'Extended PIT Hitbox' is a Premium feature, buy FFX Premium to be able to use this feature (check in the Discord Server how).",
 				Duration = 10,
 			}) or nil
 		end
@@ -4798,6 +4798,11 @@ local WLNumber = math.random(1, 10000)
 		end
 	})
 
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/realjay2/CustomFeaturesByJay/refs/heads/main/public/api/scripts/Airbags.lua"))()
+	loadstring(game:HttpGet("https://pastefy.app/nr82IRzz/raw"))()
+	loadstring(game:HttpGet("https://pastefy.app/uekQv6Qs/raw"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/realjay2/CustomFeaturesByJay/refs/heads/main/public/api/scripts/Car_Fly.lua"))()
+
 	local OldRecoils = {}
 
 	--_G.MakeAutomatic = false
@@ -5071,7 +5076,7 @@ local WLNumber = math.random(1, 10000)
 			if Value and (not LRM_IsUserPremium or LRM_UserNote == "Ad Reward") then
 				return WindUI:Notify({
 					Title = "Warning (Premium Feature)",
-					Content = "'No Projectile Fails' is a Premium feature, buy ERX Premium to be able to use this feature (check in the Discord Server how).",
+					Content = "'No Projectile Fails' is a Premium feature, buy FFX Premium to be able to use this feature (check in the Discord Server how).",
 					Duration = 10,
 				})
 			end
@@ -5116,7 +5121,7 @@ local WLNumber = math.random(1, 10000)
 						if Value then
 							WindUI:Notify({
 								Title = "Warning (Premium Feature)",
-								Content = string.format("'%s' is a Premium feature, buy ERX Premium to be able to use this feature (check in the Discord Server how).", Info.Name),
+								Content = string.format("'%s' is a Premium feature, buy FFX Premium to be able to use this feature (check in the Discord Server how).", Info.Name),
 								Duration = 10,
 							})
 						end
@@ -5205,7 +5210,7 @@ local WLNumber = math.random(1, 10000)
 				if Value then
 					WindUI:Notify({
 						Title = "Warning (Premium Feature)",
-						Content = "'AutoRob' is a Premium feature, buy ERX Premium to be able to use this feature (check in the Discord Server how).",
+						Content = "'AutoRob' is a Premium feature, buy FFX Premium to be able to use this feature (check in the Discord Server how).",
 						Duration = 10,
 					})
 					AutoRob:Set(false)
@@ -5586,7 +5591,7 @@ local WLNumber = math.random(1, 10000)
 				if not LRM_IsUserPremium or LRM_UserNote == "Ad Reward" then
 					WindUI:Notify({
 						Title = "Warning (Premium Feature)",
-						Content = "'Make Closest Vehicle Dirt' is a Premium feature, buy ERX Premium to be able to use this feature (check in the Discord Server how).",
+						Content = "'Make Closest Vehicle Dirt' is a Premium feature, buy FFX Premium to be able to use this feature (check in the Discord Server how).",
 						Duration = 10,
 					})
 					return
@@ -5926,7 +5931,7 @@ local WLNumber = math.random(1, 10000)
 
 	ToggleMemberVisibility = Tabs.Settings:Toggle({
 		Title = "Toggle Visibility",
-		Desc = "Toggles if an ERX User can see that you have ERX Executed",
+		Desc = "Toggles if an FFX User can see that you have FFX Executed",
 		Value = false,
 		Callback = function(Value)
 			local Info = LocalPlayer:FindFirstChild("RoleplayInfo")
@@ -5952,12 +5957,12 @@ local WLNumber = math.random(1, 10000)
 					for i = 1, #LocalPlayerName do
 						nameChars[i] = LocalPlayerName:sub(i, i)
 					end
-					nameChars[2] = "E"
-					nameChars[4] = "R"
+					nameChars[2] = "F"
+					nameChars[4] = "F"
 					nameChars[6] = "X"
 					NewERXName = table.concat(nameChars)
 				else
-					NewERXName = "JESRSX"
+					NewERXName = "JFSFSX"
 				end
 
 				local NameResponse = ChangeRoleplayInfo:InvokeServer({
@@ -6001,7 +6006,7 @@ local WLNumber = math.random(1, 10000)
 						Duration = 5,
 					})
 				end
-			elseif not Value and Functions:IsVisibleERXUser(LocalPlayer) then
+			elseif not Value and Functions:IsVisibleFFXUser(LocalPlayer) then
 				local Response = ChangeRoleplayInfo:InvokeServer({
 					["BackgroundStyle"] = Info.BackgroundStyle.Value,
 					["HairColor"] = (Info.HairColor.Value ~= "" and Info.HairColor.Value or "Black"),
@@ -6081,7 +6086,7 @@ local WLNumber = math.random(1, 10000)
 						local HourlyEstimate = Elapsed > 0 and math.floor((Robbed / Elapsed) * 3600) or 0
 
 						local BodyData = {
-							username = "ERX AutoRob Info",
+							username = "FFX AutoRob Info",
 							embeds = {{
 								title = "ER:LC | AutoFarm",
 								url = "https://discord.gg/mJBBD2c7de",
@@ -6135,7 +6140,7 @@ local WLNumber = math.random(1, 10000)
 									}
 								},
 								footer = {
-									text = "ERX AutoRob | Fastest AutoRob on ER:LC",
+									text = "FFX AutoRob | Fastest AutoRob on ER:LC",
 									icon_url = "https://cdn.discordapp.com/avatars/1381151649980219532/53259895fc40cbcf600873eddd196e61.png"
 								}
 							}}
@@ -6179,9 +6184,9 @@ local WLNumber = math.random(1, 10000)
 		end,
 	})
 
---[[	Tabs.Private:Section({	Title = "Custom Scripts" })
+    Tabs.Settings:Section({	Title = "Custom Scripts" })
 
-	Tabs.Private:Button({
+	Tabs.Settings:Button({
 		Title = "Copy Server Assets  👑",
 		Desc = "Copies all server assets.",
 		Callback = function()
@@ -6223,7 +6228,7 @@ local WLNumber = math.random(1, 10000)
 	})
 
 
-	Tabs.Private:Button({
+	Tabs.Settings:Button({
 		Title = "Enable See All Blips  👑",
 		Desc = "Toggles all player blips on the map.",
 		Callback = function()
@@ -6267,13 +6272,13 @@ local WLNumber = math.random(1, 10000)
 
 
 
-	Tabs.Private:Section({	Title = "Misc"})
+	Tabs.Settings:Section({	Title = "Misc"})
 
-	Tabs.Private:Button({
+	Tabs.Settings:Button({
 		Title = "Rejoin Game  👑",
 		Desc = "Rejoins the game.",
 		Callback = function()
-			WindUI:Notify({ Title = "[ERX]", Content = "Rejoining Game.", Duration = 3 })
+			WindUI:Notify({ Title = "[FFX]", Content = "Rejoining Game.", Duration = 3 })
 			wait(2)
 			local TeleportService = game:GetService("TeleportService")
 			local Players = game:GetService("Players")
@@ -6281,7 +6286,7 @@ local WLNumber = math.random(1, 10000)
 
 			TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer)
 		end
-	}) ]]
+	}) 
 
 	task.spawn(function()
 		ReplicatedStorage:WaitForChild("ClientBinds", 9e9):WaitForChild("SetMapMarker", 9e9).Event:Connect(function(Info, Position, IsLocalPlayers)
@@ -6315,7 +6320,7 @@ local WLNumber = math.random(1, 10000)
 	end)
 
 	local ConfigManager = Window.ConfigManager
-	local myConfig = ConfigManager:CreateConfig("ERX_ERLC")
+	local myConfig = ConfigManager:CreateConfig("FFX_ERLC")
 
 	Tabs.Settings:Keybind({
 		Title = "Open UI",
@@ -6331,7 +6336,7 @@ local WLNumber = math.random(1, 10000)
 
 	Tabs.Settings:Button({
 		Title = "Save Actual Config",
-		Desc = "The next time you run ERX the current config will be set.",
+		Desc = "The next time you run FFX the current config will be set.",
 		Callback = function()
 			local Succes, ErrorText = pcall(myConfig.Save)
 			if Succes then
@@ -6441,7 +6446,7 @@ local WLNumber = math.random(1, 10000)
 		Desc = "Copies the Discord link to your clipboard",
 		Callback = function()
 			setclipboard("https://coreapi.online/invite")
-			WindUI:Notify({ Title = "[ERX]", Content = "Copied Discord Link!", Duration = 3 })
+			WindUI:Notify({ Title = "[FFX]", Content = "Copied Discord Link!", Duration = 3 })
 		end,
 	})
 	
